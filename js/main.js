@@ -61,6 +61,9 @@ function updateCarouselState(pageId) {
 
   const items = activePage.querySelectorAll(".carousel-item");
   const dots = activePage.querySelectorAll(".dot");
+  const radios = activePage.querySelectorAll(
+    ".carousel-item input[type='radio']"
+  ); // 或 ".carousel-radio"
   const count = STYLES.length;
 
   // 1. 更新圖片位置 (CSS class)
@@ -73,6 +76,9 @@ function updateCarouselState(pageId) {
     else if (diff === 1) item.classList.add("pos-right");
     else if (diff === 2) item.classList.add("pos-hidden");
     else if (diff === 3) item.classList.add("pos-left");
+  });
+  radios.forEach((radio) => {
+    radio.checked = false;
   });
 
   // 2. 更新圓點 Active 狀態
