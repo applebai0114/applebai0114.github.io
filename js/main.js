@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const fp_btn = document.getElementById("fp_btn");
   if (fp_btn) {
     fp_btn.addEventListener("click", function () {
-      window.location.href = "0-0首頁index.html";
+      window.location.href = "index.html";
     });
   }
 });
