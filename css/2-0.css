@@ -311,7 +311,35 @@ p {
   z-index: -1;
   opacity: 0;
 }
-
+.carousel-item.pos-center label:hover {
+  animation: pulse 1.4s ease-in-out infinite;
+  top: 50%;
+  z-index: 15;
+  opacity: 1;
+  cursor: pointer;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+.carousel-item input {
+  opacity: 0;
+}
+.carousel-item.pos-center input:checked + label {
+  animation: none !important;
+  z-index: 10;
+  opacity: 1;
+}
 /* 箭頭按鈕 */
 
 .arrow-btn {
