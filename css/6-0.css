@@ -1,0 +1,253 @@
+/* 引入 Google Fonts: Noto Sans TC */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+
+/* ========================================================= */
+/* 1. 全域變數與基本設定 */
+/* ========================================================= */
+
+:root {
+  --primary-yellow: #e0fc45;
+  --primary-purple: #7a2cf3;
+  --primary-black: #000000;
+  --font-en: "Helvetica", sans-serif;
+  --font-zh: "Noto Sans TC", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-black);
+  color: #ffffff;
+  font-family: var(--font-en), var(--font-zh);
+  overflow-x: hidden;
+  /* 確保字體平滑 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================================= */
+/* 2. 頁面切換架構 (.page) */
+/* ========================================================= */
+
+.page {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  /* Flex 容器設定 */
+  flex-direction: column; /* 內容垂直排列 */
+  align-items: center; /* 內容水平置中 */
+  justify-content: center; /* 頁面預設垂直置中 (可能被 .scrollable 覆蓋) */
+  text-align: center;
+}
+
+.page.active {
+  display: flex;
+}
+
+.page.scrollable {
+  /* 結果頁專屬：允許內容滾動 */
+  height: auto;
+  min-height: 100vh;
+  padding: 50px 0; /* 上下內邊距 50px */
+  justify-content: flex-start; /* 內容從頂部開始排列 */
+}
+
+/* ========================================================= */
+/* 3. 背景影片設定 */
+/* ========================================================= */
+
+.video-background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  opacity: 1;
+}
+
+/* ========================================================= */
+/* 4. Logo 設定 */
+/* ========================================================= */
+
+.logo-container {
+  position: absolute; /* 絕對定位固定在左上角 */
+  top: 50px;
+  left: 50px;
+  z-index: 50;
+}
+
+.logo-container.center-top {
+  /* 用於置中 Logo 時的覆蓋樣式 */
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 132.9px;
+  height: 91px;
+}
+
+/* ========================================================= */
+/* 5. 通用排版設定 (Typography) */
+/* ========================================================= */
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* ========================================================= */
+/* 6. 按鈕基礎與樣式一 (.btn-primary) */
+/* ========================================================= */
+
+.btn {
+  /* 1. 尺寸與邊角 */
+  width: 178px;
+  height: 78px;
+  border-radius: 60px;
+
+  /* 2. 定位 */
+  margin-top: 0;
+  position: absolute; /* 絕對定位固定在底部 */
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%); /* 水平置中 */
+  text-transform: uppercase;
+
+  /* 3. 文字樣式 */
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0;
+
+  /* 4. 基礎樣式與 Flex 內容置中 */
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.1s ease-in-out;
+  z-index: 9999;
+  user-select: none;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  padding-top: 4px; /* 字體微調 */
+}
+
+/* 樣式一：主要按鈕顏色 (用於「留個紀念」) */
+.btn-primary {
+  background-color: var(--primary-yellow);
+  color: var(--primary-purple);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-purple);
+  color: var(--primary-yellow);
+  box-shadow: 0 0 15px var(--primary-purple);
+}
+
+.btn-primary:active {
+  /* Active 狀態縮小效果 */
+  width: 172px;
+  height: 72px;
+  font-size: 24px;
+  transform: translateX(-50%);
+}
+
+/* ========================================================= */
+/* 7. 結果頁 (6-0) 專屬區塊設定 */
+/* ========================================================= */
+
+/* 標題區塊 */
+.result-header {
+  margin: 169px 0 0 0; /* 距離頂部 169px (或 Logo) */
+}
+
+/* 最終 CD 圖片容器 */
+.final-cd-container {
+  margin: 146px 0 0 0; /* 距離標題 146px */
+  position: relative;
+  width: 900px; /* 佔據的空間尺寸 */
+  height: 500px;
+}
+
+.final-cd-img {
+  width: 900px;
+  height: 500px;
+}
+
+/* 推薦文字區塊 (We've got a song...) */
+.recommendation-text {
+  margin: 154px 0 0 0; /* 距離 CD 圖片 154px */
+  font-weight: bold;
+}
+
+#recommendation-text-zh {
+  margin: 15px 0 0 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* 歌曲資訊區塊 */
+.song-info {
+  margin: 104px 0 0 0; /* 距離推薦文字 104px */
+}
+
+#result-song-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#result-song-desc {
+  line-height: 35px; /* 段落行高 */
+}
+
+/* Spotify 內嵌區塊 */
+.spotify-embed {
+  width: 80%;
+  max-width: 700px;
+
+  /* 距離上方文字 169px，底部間距 252px (推開按鈕) */
+  margin: 169px auto 252px auto;
+
+  border-radius: 12px;
+  overflow: hidden;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE FIFTH SENSE</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/6-0.css" rel="stylesheet" />
+    <link href="./img/icon.png" rel="icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <!--影片區塊開始-->
+    <div class="video-background-layer">
+      <video autoplay loop muted playsinline id="bg-video">
+        <source src="./video/Comp 1.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!--影片區塊結束-->
+    <!--內容區塊開始-->
+    <section id="page-result" class="page scrollable">
+      <div class="logo-container">
+        <img src="img/logo.png" alt="Logo" class="logo" />
+      </div>
+
+      <div class="result-header">
+        <h2>Your CD!</h2>
+
+        <p>這是你的CD！</p>
+      </div>
+
+      <div class="final-cd-container">
+        <img
+          src="https://placehold.co/900x500?text=Final+CD"
+          alt="Your CD"
+          class="final-cd-img"
+        />
+      </div>
+
+      <div class="recommendation-text">
+        <h3>We’ve got a song just for you!</h3>
+        <p id="recommendation-text-zh">我們有一首推薦你的歌！</p>
+      </div>
+
+      <div class="song-info">
+        <p id="result-song-title">〈擱淺〉週捷輪</p>
+
+        <p id="result-song-desc">
+          線條與色彩之間的留白，讓人感受到你對世界細膩的觀察與節制的情<br />緒表達。整體的構成不張揚，卻有柔軟的重力——像一首緩慢流動的<br />歌，在微光中輕輕傾訴。你似乎習慣把感受藏進節奏裡，用平靜包裹著<br />憂傷。這樣的音色，屬於那些在夜裡也願意靜靜傾聽自己的人。
+        </p>
+      </div>
+
+      <div class="spotify-embed">
+        <iframe
+          src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT"
+          width="100%"
+          height="152"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <button class="btn btn-primary" id="memory_btn">留個紀念</button>
+    </section>
+    <!--內容區塊結束-->
+    <!--連結 java script-->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

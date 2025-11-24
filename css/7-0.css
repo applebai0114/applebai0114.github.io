@@ -1,0 +1,221 @@
+/* 引入 Google Fonts: Noto Sans TC */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+
+/* ========================================================= */
+/* 1. 全域變數與基本設定 */
+/* ========================================================= */
+
+:root {
+  --primary-yellow: #e0fc45;
+  --primary-purple: #7a2cf3;
+  --primary-black: #000000;
+  --font-en: "Helvetica", sans-serif;
+  --font-zh: "Noto Sans TC", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-black);
+  color: #ffffff;
+  font-family: var(--font-en), var(--font-zh);
+  overflow-x: hidden;
+  /* 確保字體平滑 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================================= */
+/* 2. 頁面切換架構 (.page) */
+/* ========================================================= */
+
+.page {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  /* Flex 容器設定 */
+  flex-direction: column; /* 內容垂直排列 */
+  align-items: center; /* 內容水平置中 */
+  justify-content: flex-start; /* 預設內容從頂部開始排列 */
+  text-align: center;
+}
+
+.page.active {
+  display: flex;
+}
+
+.page.scrollable {
+  /* 紀念頁專屬：允許內容滾動 */
+  height: auto;
+  min-height: 100vh;
+  padding: 50px 0; /* 上下內邊距 50px */
+  justify-content: flex-start;
+}
+
+/* ========================================================= */
+/* 3. 背景影片設定 */
+/* ========================================================= */
+
+.video-background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  opacity: 1;
+}
+
+/* ========================================================= */
+/* 4. 通用排版設定 (Typography) */
+/* ========================================================= */
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ========================================================= */
+/* 5. 按鈕基礎與樣式二 (.btn-secondary) */
+/* ========================================================= */
+
+.btn {
+  /* 1. 尺寸與邊角 */
+  width: 178px;
+  height: 78px;
+  border-radius: 60px;
+
+  /* 2. 定位 */
+  margin-top: 0;
+  position: absolute; /* 絕對定位固定在底部 */
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%); /* 水平置中 */
+  text-transform: uppercase;
+
+  /* 3. 文字樣式 */
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0;
+
+  /* 4. 基礎樣式與 Flex 內容置中 */
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.1s ease-in-out;
+  z-index: 9999;
+  user-select: none;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  padding-top: 4px; /* 字體微調 */
+}
+
+/* 樣式二：NEXT / 回首頁 按鈕顏色與 Hover 效果 */
+.btn-secondary {
+  background-color: var(--primary-yellow);
+  color: var(--primary-purple);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-purple);
+  color: var(--primary-yellow);
+  box-shadow: 0 0 15px var(--primary-purple);
+}
+
+.btn-secondary:active {
+  /* Active 狀態縮小效果 */
+  width: 172px;
+  height: 72px;
+  font-size: 24px;
+  transform: translateX(-50%);
+}
+
+/* ========================================================= */
+/* 6.頂部裝飾區塊 (Decorative_top) */
+/* ========================================================= */
+
+.Decorative_top {
+  display: flex; /* 讓 Logo 區塊和文字區塊橫向排列 */
+  width: 100%; /* 佔滿整個寬度 */
+}
+
+/* Logo 區塊 (請注意，這裡設定的 Logo margin 會與 .logo-container 的 absolute 衝突) */
+.logo_animation img {
+  width: 117px;
+  height: 80.11px;
+  margin: 0 0 0 50px; /* .page.scrollable 已經設定了 padding: 50px */
+}
+
+.Decorative_top {
+  display: flex; /* 讓 Logo 區塊和文字區塊橫向排列 */
+  width: 100%;
+}
+
+.Decorative_text_top {
+  margin: 0 50px 0 110px; /* .page.scrollable 已經設定了 padding: 50px */
+  display: flex; /* 讓裡面所有 p 橫著排 */
+  justify-content: space-between; /* 讓每個文字平均分布*/
+  align-items: flex-start; /* 上對齊 */
+  /* ❗ 確保這行存在！這是讓它佔滿寬度並分散文字的關鍵！ ❗ */
+  flex: 1;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+/* ========================================================= */
+/* 7. 紀念頁 (7-0) 專屬區塊設定 */
+/* ========================================================= */
+
+/* CD 圖片展示區 */
+.memory-cd-display img {
+  width: 900px;
+  height: 600px;
+  margin: 50px 0 0 0; /* 距離上方 (padding-top) 113px */
+}
+
+/* 歌曲資訊區塊 (包括名稱和間距) */
+#memory-song-name {
+  color: var(--primary-yellow);
+  font-size: 28px;
+  font-weight: bold;
+  margin: 80px 0 0 0;
+}
+#tag {
+  color: var(--primary-yellow);
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 30px 0 250px 0;
+  /* 使用巨大的 margin-bottom 推開按鈕 */
+}

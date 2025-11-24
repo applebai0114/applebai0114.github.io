@@ -1,0 +1,217 @@
+/* 引入 Google Fonts: Noto Sans TC */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+
+/* ========================================================= */
+/* 1. 全域變數與 Reset */
+/* ========================================================= */
+
+:root {
+  --primary-yellow: #e0fc45;
+  --primary-purple: #7a2cf3;
+  --primary-black: #000000;
+  --font-en: "Helvetica", sans-serif;
+  --font-zh: "Noto Sans TC", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-black);
+  color: #ffffff;
+  font-family: var(--font-en), var(--font-zh);
+  overflow-x: hidden;
+  /* ❗ 主佈局：利用 Flexbox 佔滿整個視窗並控制頂部和底部資訊貼邊 ❗ */
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* 內容垂直排列 */
+  justify-content: space-between; /* 將頂部區塊 (Decorative_top) 和底部區塊 (Decorative_down) 推到邊緣 */
+}
+
+/* ========================================================= */
+/* 2. 通用排版設定 (Typography) */
+/* ========================================================= */
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ========================================================= */
+/* 3. 背景影片與大字動畫 */
+/* ========================================================= */
+
+.video-background-layer {
+  position: fixed; /* 讓影片固定不動 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -99; /* 影片在最底層 */
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 置中影片 */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  opacity: 1;
+}
+
+/* 影片上方的動畫大字 */
+.cover_text,
+.cover_text_two {
+  font-family: Helvetica;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  position: relative; /* 確保能進行位移動畫 */
+  text-align: center;
+  opacity: 74%;
+  /* 由於影片區塊是 fixed 且全屏，這裡的 margin 僅影響動畫的初始位置，
+     但動畫開始後會被 JS (GSAP) 的 x/y 屬性控制。 */
+}
+
+.cover_text {
+  font-size: 220px;
+  margin-top: 245px;
+}
+
+.cover_text_two {
+  font-size: 300px;
+  margin-top: 0px;
+}
+
+/* ========================================================= */
+/* 4. 按鈕基礎設定 (Start / Primary) */
+/* ========================================================= */
+
+.btn {
+  /* 1. 尺寸與邊角 */
+  width: 178px;
+  height: 78px;
+  border-radius: 60px;
+
+  /* 2. 絕對定位 */
+  position: absolute; /* ❗ 這個按鈕的定位會衝突 Decorative_down 的 Flex 佈局 ❗ */
+  bottom: 50px; /* 底部固定 50px */
+  left: 50%;
+  transform: translateX(-50%); /* 水平置中 */
+
+  /* 3. 文字樣式 */
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0;
+
+  /* 4. 基礎樣式 */
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  transition: all 0.1s ease-in-out;
+  z-index: 9999;
+  user-select: none;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+
+  /* 5. Flexbox 內容置中 */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px; /* 字體微調 */
+}
+
+/* 樣式一：主要按鈕顏色 */
+.btn-primary {
+  background-color: var(--primary-yellow);
+  color: var(--primary-purple);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-purple);
+  color: var(--primary-yellow);
+  box-shadow: 0 0 15px var(--primary-purple);
+}
+
+.btn-primary:active {
+  width: 172px;
+  height: 72px;
+  font-size: 24px;
+  transform: translateX(-50%); /* 保持置中位移 */
+}
+
+/* ========================================================= */
+/* 5. 頂部裝飾區塊 (Decorative_top) */
+/* ========================================================= */
+
+/* 頂部裝飾文字區塊 */
+/* 首頁 decorative_top */
+.Decorative_top {
+  display: flex;
+  width: 100%;
+}
+
+/* Logo 區塊 */
+.logo_animation img {
+  width: 117px;
+  height: 80.11px;
+  margin: 50px 0 0 50px;
+}
+
+.Decorative_text_top {
+  margin: 50px 50px 0 110px;
+  display: flex; /* 讓裡面所有 p 橫著排 */
+  justify-content: space-between; /* 讓每個文字平均分布*/
+  align-items: flex-start; /* 上對齊 */
+  /* ❗ 確保這行存在！這是讓它佔滿寬度並分散文字的關鍵！ ❗ */
+  flex: 1;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+/* ========================================================= */
+/* 6. 底部裝飾區塊 (Decorative_down) */
+/* ========================================================= */
+
+.Decorative_down {
+  /* margin 控制與螢幕邊緣的距離 */
+  margin: 0 50px 50px 50px; /* 底部 50px, 左右 50px */
+  display: flex;
+  justify-content: space-between; /* 將左右文字推到兩側 */
+  align-items: center; /* 垂直置中對齊 */
+  font-size: 14px;
+}
+
+/* 底部左側文字 */
+.down_left_text {
+  text-align: left;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+/* 底部右側文字 */
+.down_right_text {
+  text-align: right;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 20px;
+}

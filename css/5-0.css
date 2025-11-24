@@ -1,0 +1,348 @@
+/* 引入 Google Fonts: Noto Sans TC */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+
+/* ========================================================= */
+/* 1. 全域變數與基本設定 */
+/* ========================================================= */
+
+:root {
+  --primary-yellow: #e0fc45;
+  --primary-purple: #7a2cf3;
+  --primary-black: #000000;
+  --font-en: "Helvetica", sans-serif;
+  --font-zh: "Noto Sans TC", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-black);
+  color: #ffffff;
+  font-family: var(--font-en), var(--font-zh);
+  overflow-x: hidden;
+  /* 確保字體平滑 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================================= */
+/* 2. 頁面切換架構 (.page) */
+/* ========================================================= */
+
+.page {
+  display: none; /* 預設隱藏 */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  /* Flex 容器設定 */
+  flex-direction: column; /* 內容垂直排列 */
+  align-items: center; /* 內容水平置中 */
+  justify-content: flex-start; /* 內容從頂部開始排列 */
+  text-align: center;
+}
+
+.page.active {
+  display: flex; /* 顯示當前頁面 */
+}
+
+.page.scrollable {
+  /* 捲軸頁面設定 */
+  height: auto;
+  min-height: 100vh;
+  padding: 50px 0;
+  justify-content: flex-start;
+}
+
+/* ========================================================= */
+/* 3. 背景影片設定 */
+/* ========================================================= */
+
+.video-background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 置中 */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  opacity: 1;
+}
+
+/* ========================================================= */
+/* 4. Logo 設定 */
+/* ========================================================= */
+
+.logo-container {
+  position: absolute; /* 絕對定位固定在左上角 */
+  top: 50px;
+  left: 50px;
+  z-index: 50;
+}
+
+.logo-container.center-top {
+  /* 用於置中 Logo 時的覆蓋樣式 */
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 132.9px;
+  height: 91px;
+}
+
+/* ========================================================= */
+/* 5. 通用排版設定 (Typography) */
+/* ========================================================= */
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* ========================================================= */
+/* 6. 按鈕基礎設定 (.btn) */
+/* ========================================================= */
+
+.btn {
+  /* 1. 尺寸與邊角 */
+  width: 178px;
+  height: 78px;
+  border-radius: 60px;
+
+  /* 2. 定位 */
+  margin-top: 0;
+  position: absolute; /* 絕對定位固定在底部 */
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%); /* 水平置中 */
+  text-transform: uppercase;
+
+  /* 3. 文字樣式 */
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0;
+
+  /* 4. 基礎樣式與 Flex 內容置中 */
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.1s ease-in-out;
+  z-index: 9999;
+  user-select: none;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  padding-top: 4px; /* 字體微調 */
+}
+
+/* 樣式二：NEXT 按鈕顏色與 Hover 效果 */
+.btn-secondary {
+  background-color: var(--primary-yellow);
+  color: var(--primary-purple);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-purple);
+  color: var(--primary-yellow);
+  box-shadow: 0 0 15px var(--primary-purple);
+}
+
+.btn-secondary:active {
+  /* Active 狀態縮小效果 */
+  width: 172px;
+  height: 72px;
+  font-size: 24px;
+  transform: translateX(-50%);
+}
+
+/* ========================================================= */
+/* 7. 選擇頁面內容設定 (Step 1: 選擇外殼) */
+/* ========================================================= */
+
+/* 進度條容器 */
+.progress-bar-container {
+  margin: 50px 0 0 0; /* 距離頂部 50px */
+}
+
+.progress-bar-container img {
+  width: 184px;
+  height: 40px;
+}
+
+/* 標題與副標題區塊 */
+.selection-title {
+  margin: 40px 0 0 0; /* 距離進度條 40px */
+}
+
+/* 輪播外部容器 */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0 0 0; /* 距離標題 100px */
+}
+
+/* 3D 轉盤設定 (Wrapper) */
+.carousel-3d-wrapper {
+  position: relative;
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 輪播項目的容器 (.carousel-item) */
+.carousel-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  opacity: 0;
+  z-index: 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+}
+
+/* 圓點指示器樣式 */
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 17px; /* 圓點間距 */
+  margin: 110px 0 0 0; /* 距離輪播區塊 110px */
+}
+
+.dot {
+  width: 17px;
+  height: 17px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dot:hover {
+  opacity: 0.7;
+}
+
+.dot.active {
+  background-color: var(--primary-yellow);
+  opacity: 1;
+  transform: scale(1.3);
+  box-shadow: 0 0 10px rgba(224, 252, 69, 0.5);
+}
+
+/* 狀態定義 (圖片在 3D 空間中的位置與大小) */
+
+.carousel-item.pos-center {
+  transform: translate(-50%, -50%) scale(2.3); /* 居中放大 */
+  top: 50%;
+  z-index: 10;
+  opacity: 1;
+}
+
+.carousel-item.pos-center img {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
+}
+
+.carousel-item.pos-left {
+  transform: translate(-185%, -50%) scale(0.8); /* 左側縮小 */
+  z-index: 5;
+  opacity: 0.4;
+}
+
+.carousel-item.pos-right {
+  transform: translate(85%, -50%) scale(0.8); /* 右側縮小 */
+  z-index: 5;
+  opacity: 0.4;
+}
+
+.carousel-item.pos-hidden {
+  transform: translate(-50%, -50%) scale(0.5); /* 隱藏狀態 */
+  z-index: -1;
+  opacity: 0;
+}
+
+/* 箭頭按鈕 */
+
+.arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--primary-yellow);
+  color: var(--primary-purple);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 20;
+}
+
+.arrow-btn.prev {
+  left: 10%;
+}
+
+.arrow-btn.next {
+  right: 10%;
+}
+
+.arrow-btn:hover {
+  background-color: var(--primary-purple);
+  color: var(--primary-yellow);
+  transform: translateY(-50%) scale(1.1);
+}
