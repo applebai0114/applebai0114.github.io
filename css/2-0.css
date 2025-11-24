@@ -284,7 +284,7 @@ p {
 /* 狀態定義 (圖片在 3D 空間中的位置與大小) */
 
 .carousel-item.pos-center {
-  transform: translate(-50%, -50%) scale(2.3); /* 居中放大 */
+  transform: translate(-50%, -50%) scale(2.3); /* 居中放大(x,y) */
   top: 50%;
   z-index: 10;
   opacity: 1;
@@ -295,19 +295,19 @@ p {
 }
 
 .carousel-item.pos-left {
-  transform: translate(-185%, -50%) scale(0.8); /* 左側縮小 */
+  transform: translate(-200%, -50%) scale(0.8); /* 左側縮小 (x,y)*/
   z-index: 5;
   opacity: 0.4;
 }
 
 .carousel-item.pos-right {
-  transform: translate(85%, -50%) scale(0.8); /* 右側縮小 */
+  transform: translate(100%, -50%) scale(0.8); /* 右側縮小(x,y) */
   z-index: 5;
   opacity: 0.4;
 }
 
 .carousel-item.pos-hidden {
-  transform: translate(-50%, -50%) scale(0.5); /* 隱藏狀態 */
+  transform: translate(-50%, -50%) scale(0.5); /* 隱藏狀態(x,y) */
   z-index: -1;
   opacity: 0;
 }
