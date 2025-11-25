@@ -202,36 +202,144 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 2-0 選擇外殼 (NEXT 按鈕)
   const next_btn_first = document.getElementById("next_btn_first");
+  const warningcase = document.getElementById("case-warning");
+  let warningcaseTimer = null;
+
   if (next_btn_first) {
     next_btn_first.addEventListener("click", function () {
-      saveChoice("case", currentOptionIndex); // 儲存選擇的外殼
+      // 1. 檢查有沒有選到任一個 radio
+      const checkedRadio = document.querySelector(
+        ".carousel-item input[type='radio']:checked"
+      );
+
+      if (!checkedRadio) {
+        // 沒有選 → 顯示小提醒 2 秒
+        if (warningcase) {
+          warningcase.classList.add("show");
+          clearTimeout(warningcaseTimer);
+          warningcaseTimer = setTimeout(() => {
+            warningcase.classList.remove("show");
+          }, 2000);
+        }
+        return; // 直接擋掉，不跳頁
+      }
+
+      //有選
+      const radios = document.querySelectorAll(
+        ".carousel-item input[type='radio']"
+      );
+      const chosenIndex = Array.from(radios).indexOf(checkedRadio);
+
+      //儲存選擇 & 正常跳下一頁
+      saveChoice("case", chosenIndex);
       window.location.href = "3-0選擇封面.html";
     });
   }
 
   // 3-0 選擇封面 (NEXT 按鈕)
   const next_btn_secondary = document.getElementById("next_btn_secondary");
+  const warningcover = document.getElementById("cover-warning");
+  let warningcoverTimer = null;
+
   if (next_btn_secondary) {
     next_btn_secondary.addEventListener("click", function () {
-      saveChoice("cover", currentOptionIndex); // 儲存選擇的封面
+      // 1. 檢查有沒有選到任一個 radio
+      const checkedRadio = document.querySelector(
+        ".carousel-item input[type='radio']:checked"
+      );
+
+      if (!checkedRadio) {
+        // 沒有選 → 顯示小提醒 2 秒
+        if (warningcover) {
+          warningcover.classList.add("show");
+          clearTimeout(warningcoverTimer);
+          warningcoverTimer = setTimeout(() => {
+            warningcover.classList.remove("show");
+          }, 2000);
+        }
+        return; // 直接擋掉，不跳頁
+      }
+
+      //有選
+      const radios = document.querySelectorAll(
+        ".carousel-item input[type='radio']"
+      );
+      const chosenIndex = Array.from(radios).indexOf(checkedRadio);
+
+      //儲存選擇 & 正常跳下一頁
+      saveChoice("case", chosenIndex);
       window.location.href = "4-0選擇鑰匙圈.html";
     });
   }
 
   // 4-0 選擇鑰匙圈 (NEXT 按鈕)
   const next_btn_third = document.getElementById("next_btn_third");
+  const warningkeychin = document.getElementById("keychin-warning");
+  let warningkeychinTimer = null;
+
   if (next_btn_third) {
     next_btn_third.addEventListener("click", function () {
-      saveChoice("keychain", currentOptionIndex); // 儲存選擇的鑰匙圈
+      // 1. 檢查有沒有選到任一個 radio
+      const checkedRadio = document.querySelector(
+        ".carousel-item input[type='radio']:checked"
+      );
+
+      if (!checkedRadio) {
+        // 沒有選 → 顯示小提醒 2 秒
+        if (warningkeychin) {
+          warningkeychin.classList.add("show");
+          clearTimeout(warningkeychinTimer);
+          warningkeychinTimer = setTimeout(() => {
+            warningkeychin.classList.remove("show");
+          }, 2000);
+        }
+        return; // 直接擋掉，不跳頁
+      }
+
+      //有選
+      const radios = document.querySelectorAll(
+        ".carousel-item input[type='radio']"
+      );
+      const chosenIndex = Array.from(radios).indexOf(checkedRadio);
+
+      //儲存選擇 & 正常跳下一頁
+      saveChoice("case", chosenIndex);
       window.location.href = "5-0選擇貼紙.html";
     });
   }
 
   // 5-0 選擇貼紙 (NEXT 按鈕)
   const next_btn_forth = document.getElementById("next_btn_forth");
+  const warningsticker = document.getElementById("sticker-warning");
+  let warningstickerTimer = null;
+
   if (next_btn_forth) {
     next_btn_forth.addEventListener("click", function () {
-      saveChoice("sticker", currentOptionIndex); // 儲存選擇的貼紙
+      // 1. 檢查有沒有選到任一個 radio
+      const checkedRadio = document.querySelector(
+        ".carousel-item input[type='radio']:checked"
+      );
+
+      if (!checkedRadio) {
+        // 沒有選 → 顯示小提醒 2 秒
+        if (warningsticker) {
+          warningsticker.classList.add("show");
+          clearTimeout(warningstickerTimer);
+          warninstickerTimer = setTimeout(() => {
+            warningsticker.classList.remove("show");
+          }, 2000);
+        }
+        return; // 直接擋掉，不跳頁
+      }
+
+      //有選
+      const radios = document.querySelectorAll(
+        ".carousel-item input[type='radio']"
+      );
+      const chosenIndex = Array.from(radios).indexOf(checkedRadio);
+
+      //儲存選擇 & 正常跳下一頁
+      saveChoice("case", chosenIndex);
       window.location.href = "6-0結果頁.html";
     });
   }
