@@ -191,6 +191,24 @@ p {
   font-size: 24px;
   transform: translateX(-50%);
 }
+/*提醒文字*/
+.warning-text {
+  position: absolute;
+  left: 50%;
+  bottom: 140px;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: var(--primary-yellow);
+  opacity: 0; /* 一開始看不到 */
+  pointer-events: none; /* 不要擋到滑鼠 */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* 顯示時套這個 class */
+.warning-text.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+}
 
 /* ========================================================= */
 /* 7. 選擇頁面內容設定 (Step 1: 選擇外殼) */
