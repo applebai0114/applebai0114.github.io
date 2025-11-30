@@ -191,6 +191,24 @@ p {
   font-size: 24px;
   transform: translateX(-50%);
 }
+/*提醒文字*/
+.warning-text {
+  position: absolute;
+  left: 50%;
+  bottom: 140px;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: var(--primary-yellow);
+  opacity: 0; /* 一開始看不到 */
+  pointer-events: none; /* 不要擋到滑鼠 */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* 顯示時套這個 class */
+.warning-text.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+}
 
 /* ========================================================= */
 /* 7. 選擇頁面內容設定 (Step 1: 選擇外殼) */
@@ -311,7 +329,59 @@ p {
   z-index: -1;
   opacity: 0;
 }
+.carousel-item.pos-center:hover label {
+  animation: opacityPulse 1.4s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes opacityPulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 
+.carousel-item.pos-center label {
+  animation: pulse 1.4s ease-in-out infinite;
+  top: 50%;
+  z-index: 15;
+  opacity: 1;
+  cursor: pointer;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+.carousel-item input {
+  opacity: 0;
+}
+.carousel-item.pos-center input:active + label {
+  animation: none !important;
+  transform: scale(0.9);
+  z-index: 10;
+  opacity: 0.5;
+}
+
+.carousel-item.pos-center input:checked + label {
+  animation: none !important;
+  transform: scale(1);
+  z-index: 10;
+  opacity: 1;
+}
 /* 箭頭按鈕 */
 
 .arrow-btn {
