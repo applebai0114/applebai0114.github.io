@@ -215,3 +215,23 @@ h3 {
   font-weight: lighter;
   line-height: 20px;
 }
+
+/* ========================================================= */
+/* 新增：中間懸浮影片設定 */
+/* ========================================================= */
+
+.center-floating-video {
+  position: absolute; /* 絕對定位：讓它浮起來 */
+  top: 50%; /* 垂直位置：螢幕一半 */
+  left: 50%; /* 水平位置：螢幕一半 */
+  transform: translate(-50%, -50%); /* 校正回正中央 */
+
+  width: 1000px; /* ★ 你可以在這裡調整影片寬度 */
+  height: auto; /* 高度自動 */
+  z-index: 5; /* 層級：設為 5 確保浮在背景之上 */
+}
+
+.center-floating-video video {
+  width: 100%;
+  display: block;
+}
