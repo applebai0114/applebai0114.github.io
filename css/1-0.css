@@ -95,6 +95,8 @@ body {
   top: 500px;
   left: 50%;
   transform: translateX(-50%);
+  /* 呼叫 HTML 裡的 SVG 濾鏡 */
+  filter: url(#black-to-transparent);
 }
 
 /* Logo 圖片尺寸 */
