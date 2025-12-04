@@ -198,11 +198,22 @@ h3 {
 /* 7. 紀念頁 (7-0) 專屬區塊設定 */
 /* ========================================================= */
 
-/* CD 圖片展示區 */
-.memory-cd-display img {
-  width: 900px;
-  height: 600px;
-  margin: 50px 0 0 0; /* 距離上方 (padding-top) 113px */
+/* CD result */
+.final-cd-container {
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid red;
+}
+
+.cd-part {
+  border: 1px dashed blue;
+}
+
+.cd-part img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* 歌曲資訊區塊 (包括名稱和間距) */
