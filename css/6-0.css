@@ -201,17 +201,11 @@ p {
   margin: 169px 0 0 0; /* 距離頂部 169px (或 Logo) */
 }
 
-/* 最終 CD 圖片容器 */
-.final-cd-container {
-  margin: 146px 0 0 0; /* 距離標題 146px */
-  position: relative;
-  width: 900px; /* 佔據的空間尺寸 */
-  height: 500px;
-}
-
-.final-cd-img {
-  width: 900px;
-  height: 500px;
+/* 最終 result */
+.cd-part img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* 推薦文字區塊 (We've got a song...) */
