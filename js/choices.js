@@ -10,28 +10,28 @@ function getUserChoices() {
 // 2. 不同部位 + 不同風格 對應的圖片路徑
 const IMAGE_MAP = {
   case: {
-    sweet: "./img/case_cute.png",
-    hiphop: "./img/case_hiphop.png",
-    y3k: "./img/case_y3k.png",
-    dark: "./img/case_dark.png",
+    sweet: "./img/result_case_cute.png",
+    hiphop: "./img/result_case_hiphop.png",
+    y3k: "./img/result_case_y3k.png",
+    dark: "./img/result_case_dark.png",
   },
   cover: {
-    sweet: "./img/",
-    hiphop: "./img/",
-    y3k: "./img/",
-    dark: "./img/cover_dark.png",
+    sweet: "./img/result_cover_cute.png",
+    hiphop: "./img/result_cover_hiphop.png",
+    y3k: "./img/result_cover_y3k.png",
+    dark: "./img/result_cover_dark.png",
   },
   keychain: {
-    sweet: "./img/keychain_cute.png",
-    hiphop: "./img/keychain_hiphop.png",
-    y3k: "./img/keychain_y3k.png",
-    dark: "./img/keychain_dark.png",
+    sweet: "./img/result_keychain_cute.png",
+    hiphop: "./img/result_keychain_hiphop.png",
+    y3k: "./img/result_keychain_y3k.png",
+    dark: "./img/result_keychain_dark.png",
   },
   sticker: {
-    sweet: "./img/",
-    hiphop: "./img/",
-    y3k: "./img/",
-    dark: "./img/stickers_dark.png/",
+    sweet: "./img/result_stickers_cute.png",
+    hiphop: "./img/result_stickers_hiphop.png",
+    y3k: "./img/result_stickers_y3k.png",
+    dark: "./img/result_stickers_dark.png/",
   },
 };
 
