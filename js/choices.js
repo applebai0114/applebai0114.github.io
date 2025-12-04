@@ -104,7 +104,6 @@ function buildComboKey(counts) {
   const d = counts.dark || 0;
 
   return `${s}-${h}-${y}-${d}`;
-  // 例如回傳 "1-0-0-3"
 }
 
 // result_pool
