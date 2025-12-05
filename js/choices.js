@@ -31,7 +31,7 @@ const IMAGE_MAP = {
     sweet: "./img/result_stickers_cute.png",
     hiphop: "./img/result_stickers_hiphop.png",
     y3k: "./img/result_stickers_y3k.png",
-    dark: "./img/result_stickers_dark.png/",
+    dark: "./img/result_stickers_dark.png",
   },
 };
 
