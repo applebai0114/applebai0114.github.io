@@ -397,7 +397,7 @@ const RESULT_POOL = {
   "0-1-3-0": [
     {
       title: "〈Gluttony 〉Aldrch / Voda Fuji",
-      desc: "",
+      desc: "Hyperpop 是一種融合了流行、電子、嘻哈、朋克等元素的實驗音樂風格，利用多樣的音效讓歌曲變得極致豐富，打破傳統音樂框架。aldrch 的gluttony就是典型的hyperpop 曲風歌曲，講述著在一段感情中越陷越深，變得越來越瘋狂，越來越偏執，最後被吞噬的過程，這種混亂就是對Hyperpop最好的詮釋。",
       spotifyUrl:
         "https://open.spotify.com/embed/track/6OCFifBlii2D7QN2upt6mg?utm_source=generator",
     },
