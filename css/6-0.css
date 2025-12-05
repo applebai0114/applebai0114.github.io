@@ -197,7 +197,7 @@ p {
 
 /* 標題區塊 */
 .result-header {
-  margin: 15.65vh 0 0 0; /* 169px -> 15.65vh */
+  margin: 15vh 0 0 0; /* 169px -> 15.65vh */
 }
 
 /* 最終 CD 圖片容器 (.cd-part) */
