@@ -52,7 +52,7 @@ body {
   /* 適用於內容可能超出單螢幕高度的頁面 */
   height: auto;
   min-height: 100vh;
-  padding: 50px 0;
+  padding: 4.63vh 0;
   justify-content: flex-start;
 }
 
@@ -92,7 +92,7 @@ body {
   /* ❗ 這裡的 position: relative; 和 top/left: auto 是為了讓 Logo 參與 Flex 佈局 ❗ */
   position: absolute;
   z-index: 50;
-  top: 500px;
+  top: 46.3vh;
   left: 50%;
   transform: translateX(-50%);
   /* 呼叫 HTML 裡的 SVG 濾鏡 */
@@ -101,8 +101,8 @@ body {
 
 /* Logo 圖片尺寸 */
 .logo {
-  width: 465px;
-  height: 318.4px;
+  width: 24.22vw;
+  height: 29.48vh;
 }
 
 /* ========================================================= */
@@ -110,21 +110,21 @@ body {
 /* ========================================================= */
 
 h1 {
-  font-size: 60px;
+  font-size: 3.125vw;
   font-weight: bold;
   margin: 0;
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 2.81vw;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.85vh;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 1.875vw;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.93vh;
 }
 
 /* ========================================================= */
@@ -133,13 +133,13 @@ h3 {
 
 .btn {
   /* 1. 尺寸與邊角 */
-  width: 178px;
-  height: 78px;
-  border-radius: 60px;
+  width: 9.27vw; /* 178px -> 9.27vw */
+  height: 7.22vh; /* 78px -> 7.22vh */
+  border-radius: 5.56vh; /* 60px -> 5.56vh */
 
-  /* ❗ 修正：改為絕對定位，固定在底部 ❗ */
+  /* 2. 定位 */
   position: absolute;
-  bottom: 50px; /* 固定底部 50px */
+  bottom: 4.63vh; /* 50px -> 4.63vh */
   left: 50%;
   transform: translateX(-50%); /* 水平置中 */
 
@@ -149,7 +149,7 @@ h3 {
   align-items: center;
 
   /* 4. 文字與效果 */
-  font-size: 28px;
+  font-size: 1.46vw; /* 28px -> 1.46vw */
   font-weight: bold;
   cursor: pointer;
   border: none;
@@ -164,15 +164,15 @@ h3 {
   line-height: 1;
   letter-spacing: 0;
   padding: 0; /* 確保內距為 0 */
-  padding-top: 4px;
+  padding-top: 0.37vh; /* 4px -> 0.37vh */
 }
 
 /* 長文字按鈕樣式 (本頁使用) */
 .btn-wide {
   background-color: var(--primary-yellow);
   color: var(--primary-purple);
-  width: 400px !important; /* 強制寬度 */
-  height: 78px;
+  width: 20.83vw !important; /* 400px -> 20.83vw */
+  height: 7.22vh; /* 78px -> 7.22vh */
 }
 
 .btn-wide:hover {
@@ -182,9 +182,9 @@ h3 {
 }
 
 .btn-wide:active {
-  width: 355px !important;
-  height: 72px;
-  font-size: 24px;
+  width: 18.5vw !important; /* 355px -> 18.50vw */
+  height: 6.67vh; /* 72px -> 6.67vh */
+  font-size: 1.25vw; /* 24px -> 1.25vw */
   /* 保持按鈕在點擊時不水平移動 */
 }
 
@@ -194,14 +194,14 @@ h3 {
 
 /* 整體內容容器 */
 .intro-content {
-  max-width: 800px; /* 限制最大寬度 */
-  padding: 0 20px; /* 左右內邊距 */
-  margin: 130px 0px 0px 0px; /* 將整個區塊推離上方 130px */
+  max-width: 41.67vw; /* 限制最大寬度 */
+  padding: 0 1.04vw; /* 左右內邊距 */
+  margin: 12.04vh 0px 0px 0px; /* 將整個區塊推離上方 130px */
 }
 
 /* 內文區塊 */
 .text-block-middle {
-  font-size: 18px;
-  line-height: 50px; /* 行距設定 */
-  margin: 50px 0px 0px 0px; /* 將內文推離上方標題 50px */
+  font-size: 0.94vw;
+  line-height: 4.63vh; /* 行距設定 */
+  margin: 4.63vh 0px 0px 0px; /* 將內文推離上方標題 50px */
 }

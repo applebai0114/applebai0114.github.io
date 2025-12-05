@@ -32,21 +32,21 @@ body {
 /* ========================================================= */
 
 h1 {
-  font-size: 60px;
+  font-size: 3.125;
   font-weight: bold;
   margin: 0;
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 2.81vw;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.85vh;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 1.875vw;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.93vh;
 }
 
 /* ========================================================= */
@@ -90,13 +90,13 @@ h3 {
 }
 
 .cover_text {
-  font-size: 220px;
-  margin-top: 245px;
+  font-size: 11.46vw;
+  margin-top: 22.69vh;
 }
 
 .cover_text_two {
-  font-size: 300px;
-  margin-top: 0px;
+  font-size: 15.63vw;
+  margin-top: 0vh;
 }
 
 /* ========================================================= */
@@ -105,18 +105,18 @@ h3 {
 
 .btn {
   /* 1. 尺寸與邊角 */
-  width: 178px;
-  height: 78px;
-  border-radius: 60px;
+  width: 9.27vw;
+  height: 7.22vh;
+  border-radius: 5.56vh;
 
   /* 2. 絕對定位 */
   position: absolute; /* ❗ 這個按鈕的定位會衝突 Decorative_down 的 Flex 佈局 ❗ */
-  bottom: 50px; /* 底部固定 50px */
+  bottom: 4.63vh; /* 底部固定 50px */
   left: 50%;
   transform: translateX(-50%); /* 水平置中 */
 
   /* 3. 文字樣式 */
-  font-size: 28px;
+  font-size: 1.46vw;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
@@ -136,7 +136,7 @@ h3 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding-top: 4px; /* 字體微調 */
+  padding-top: 0.37vh; /* 字體微調 */
 }
 
 /* 樣式一：主要按鈕顏色 */
@@ -152,9 +152,9 @@ h3 {
 }
 
 .btn-primary:active {
-  width: 172px;
-  height: 72px;
-  font-size: 24px;
+  width: 8.96vw;
+  height: 6.67vh;
+  font-size: 1.25vw;
   transform: translateX(-50%); /* 保持置中位移 */
 }
 
@@ -171,19 +171,19 @@ h3 {
 
 /* Logo 區塊 */
 .logo_animation img {
-  width: 117px;
-  height: 80.11px;
-  margin: 50px 0 0 50px;
+  width: 6.1vw;
+  height: 7.42vh;
+  margin: 4.63vh 0 0 2.6vw;
 }
 
 .Decorative_text_top {
-  margin: 50px 50px 0 110px;
+  margin: 4.63vh 2.6vw 0 5.73vw;
   display: flex; /* 讓裡面所有 p 橫著排 */
   justify-content: space-between; /* 讓每個文字平均分布*/
   align-items: flex-start; /* 上對齊 */
   /* ❗ 確保這行存在！這是讓它佔滿寬度並分散文字的關鍵！ ❗ */
   flex: 1;
-  font-size: 14px;
+  font-size: 0.73vw;
   font-weight: lighter;
 }
 
@@ -193,27 +193,27 @@ h3 {
 
 .Decorative_down {
   /* margin 控制與螢幕邊緣的距離 */
-  margin: 0 50px 50px 50px; /* 底部 50px, 左右 50px */
+  margin: 0 2.6vw 4.63vh 2.6vw; /* 底部 50px, 左右 50px */
   display: flex;
   justify-content: space-between; /* 將左右文字推到兩側 */
   align-items: center; /* 垂直置中對齊 */
-  font-size: 14px;
+  font-size: 0.73vw;
 }
 
 /* 底部左側文字 */
 .down_left_text {
   text-align: left;
-  font-size: 14px;
+  font-size: 0.73vw;
   font-weight: lighter;
-  line-height: 20px;
+  line-height: 1.85vh;
 }
 
 /* 底部右側文字 */
 .down_right_text {
   text-align: right;
-  font-size: 14px;
+  font-size: 0.73vw;
   font-weight: lighter;
-  line-height: 20px;
+  line-height: 1.85vh;
 }
 
 /* ========================================================= */
@@ -226,7 +226,7 @@ h3 {
   left: 50%; /* 水平位置：螢幕一半 */
   transform: translate(-50%, -55%); /* 校正回正中央 */
 
-  width: 1150px; /* ★ 你可以在這裡調整影片寬度 */
+  width: 59.9vw; /* ★ 你可以在這裡調整影片寬度 */
   height: auto; /* 高度自動 */
   z-index: 5; /* 層級：設為 5 確保浮在背景之上 */
 }

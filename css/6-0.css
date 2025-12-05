@@ -38,7 +38,7 @@ body {
   /* Flex 容器設定 */
   flex-direction: column; /* 內容垂直排列 */
   align-items: center; /* 內容水平置中 */
-  justify-content: center; /* 頁面預設垂直置中 (可能被 .scrollable 覆蓋) */
+  justify-content: center; /* 頁面預設垂直置中 */
   text-align: center;
 }
 
@@ -50,7 +50,7 @@ body {
   /* 結果頁專屬：允許內容滾動 */
   height: auto;
   min-height: 100vh;
-  padding: 50px 0; /* 上下內邊距 50px */
+  padding: 4.63vh 0; /* 50px -> 4.63vh */
   justify-content: flex-start; /* 內容從頂部開始排列 */
 }
 
@@ -87,8 +87,8 @@ body {
 
 .logo-container {
   position: absolute; /* 絕對定位固定在左上角 */
-  top: 50px;
-  left: 50px;
+  top: 4.63vh; /* 50px -> 4.63vh */
+  left: 2.6vw; /* 50px -> 2.60vw */
   z-index: 50;
 }
 
@@ -97,12 +97,12 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  margin-bottom: 30px;
+  margin-bottom: 2.78vh; /* 30px -> 2.78vh */
 }
 
 .logo {
-  width: 132.9px;
-  height: 91px;
+  width: 6.92vw; /* 132.9px -> 6.92vw */
+  height: 8.43vh; /* 91px -> 8.43vh */
 }
 
 /* ========================================================= */
@@ -110,27 +110,27 @@ body {
 /* ========================================================= */
 
 h1 {
-  font-size: 60px;
+  font-size: 3.13vw; /* 60px -> 3.13vw */
   font-weight: bold;
   margin: 0;
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 2.81vw; /* 54px -> 2.81vw */
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.85vh; /* 20px -> 1.85vh */
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 1.88vw; /* 36px -> 1.88vw */
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.93vh; /* 10px -> 0.93vh */
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.04vw; /* 20px -> 1.04vw */
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 1.85vh; /* 20px -> 1.85vh */
 }
 
 /* ========================================================= */
@@ -139,20 +139,20 @@ p {
 
 .btn {
   /* 1. 尺寸與邊角 */
-  width: 178px;
-  height: 78px;
-  border-radius: 60px;
+  width: 9.27vw; /* 178px -> 9.27vw */
+  height: 7.22vh; /* 78px -> 7.22vh */
+  border-radius: 5.56vh; /* 60px -> 5.56vh */
 
   /* 2. 定位 */
   margin-top: 0;
   position: absolute; /* 絕對定位固定在底部 */
-  bottom: 50px;
+  bottom: 4.63vh; /* 50px -> 4.63vh */
   left: 50%;
   transform: translateX(-50%); /* 水平置中 */
   text-transform: uppercase;
 
   /* 3. 文字樣式 */
-  font-size: 28px;
+  font-size: 1.46vw; /* 28px -> 1.46vw */
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0;
@@ -167,9 +167,8 @@ p {
   transition: all 0.1s ease-in-out;
   z-index: 9999;
   user-select: none;
-  border: 2px solid transparent;
-  box-sizing: border-box;
-  padding-top: 4px; /* 字體微調 */
+  border: 0.1vw solid transparent; /* 2px -> 0.10vw */
+  padding-top: 0.37vh; /* 4px -> 0.37vh */
 }
 
 /* 樣式一：主要按鈕顏色 (用於「留個紀念」) */
@@ -186,9 +185,9 @@ p {
 
 .btn-primary:active {
   /* Active 狀態縮小效果 */
-  width: 172px;
-  height: 72px;
-  font-size: 24px;
+  width: 8.96vw; /* 172px -> 8.96vw */
+  height: 6.67vh; /* 72px -> 6.67vh */
+  font-size: 1.25vw; /* 24px -> 1.25vw */
   transform: translateX(-50%);
 }
 
@@ -198,58 +197,13 @@ p {
 
 /* 標題區塊 */
 .result-header {
-  margin: 169px 0 0 0; /* 距離頂部 169px (或 Logo) */
+  margin: 15.65vh 0 0 0; /* 169px -> 15.65vh */
 }
 
-/* 最終 result */
-.cd-part img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* 推薦文字區塊 (We've got a song...) */
-.recommendation-text {
-  margin: 154px 0 0 0; /* 距離 CD 圖片 154px */
-  font-weight: bold;
-}
-
-#recommendation-text-zh {
-  margin: 15px 0 0 0;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-/* 歌曲資訊區塊 */
-.song-info {
-  margin: 104px 0 0 0; /* 距離推薦文字 104px */
-}
-
-#result-song-title {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-#result-song-desc {
-  line-height: 35px; /* 段落行高 */
-}
-
-/* Spotify 內嵌區塊 */
-.spotify-embed {
-  width: 80%;
-  max-width: 700px;
-
-  /* 距離上方文字 169px，底部間距 252px (推開按鈕) */
-  margin: 169px auto 252px auto;
-
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-/* cdpart */
+/* 最終 CD 圖片容器 (.cd-part) */
 .cd-part {
-  width: 1496px;
-  height: 842px;
+  width: 77.92vw; /* 1496px -> 77.92vw */
+  height: 77.96vh; /* 842px -> 77.96vh */
   position: relative;
   margin: 0 auto;
   overflow: visible; /* 讓掛飾可以超出去 */
@@ -262,5 +216,43 @@ p {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  pointer-events: none; /* 不影響點擊 */
+  pointer-events: none;
+}
+
+/* 推薦文字區塊 (We've got a song...) */
+.recommendation-text {
+  margin: 14.26vh 0 0 0; /* 154px -> 14.26vh */
+  font-weight: bold;
+}
+
+#recommendation-text-zh {
+  margin: 1.39vh 0 0 0; /* 15px -> 1.39vh */
+  font-size: 1.46vw; /* 28px -> 1.46vw */
+  font-weight: bold;
+}
+
+/* 歌曲資訊區塊 */
+.song-info {
+  margin: 9.63vh 0 0 0; /* 104px -> 9.63vh */
+}
+
+#result-song-title {
+  font-size: 1.46vw; /* 28px -> 1.46vw */
+  font-weight: bold;
+}
+
+#result-song-desc {
+  line-height: 3.24vh; /* 35px -> 3.24vh */
+}
+
+/* Spotify 內嵌區塊 */
+.spotify-embed {
+  width: 80%;
+  max-width: 36.46vw; /* 700px -> 36.46vw */
+
+  /* 距離上方文字 169px，底部間距 252px (推開按鈕) */
+  margin: 15.65vh auto 23.33vh auto; /* 169px -> 15.65vh, 252px -> 23.33vh */
+
+  border-radius: 12px;
+  overflow: hidden;
 }

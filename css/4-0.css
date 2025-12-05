@@ -50,7 +50,7 @@ body {
   /* 捲軸頁面設定 */
   height: auto;
   min-height: 100vh;
-  padding: 50px 0;
+  padding: 4.63vh 0;
   justify-content: flex-start;
 }
 
@@ -87,8 +87,8 @@ body {
 
 .logo-container {
   position: absolute; /* 絕對定位固定在左上角 */
-  top: 50px;
-  left: 50px;
+  top: 4.63vh;
+  left: 2.6vw;
   z-index: 50;
 }
 
@@ -97,12 +97,12 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  margin-bottom: 30px;
+  margin-bottom: 2.78vh;
 }
 
 .logo {
-  width: 132.9px;
-  height: 91px;
+  width: 6.92vw;
+  height: 8.43vh;
 }
 
 /* ========================================================= */
@@ -110,27 +110,27 @@ body {
 /* ========================================================= */
 
 h1 {
-  font-size: 60px;
+  font-size: 3.13vw;
   font-weight: bold;
   margin: 0;
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 2.81vw;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.85vh;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 1.88vw;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.93vh;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.04vw;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 1.85vh;
 }
 
 /* ========================================================= */
@@ -139,20 +139,20 @@ p {
 
 .btn {
   /* 1. 尺寸與邊角 */
-  width: 178px;
-  height: 78px;
-  border-radius: 60px;
+  width: 9.27vw; /* 178px -> 9.27vw */
+  height: 7.22vh; /* 78px -> 7.22vh */
+  border-radius: 5.56vh; /* 60px -> 5.56vh */
 
   /* 2. 定位 */
   margin-top: 0;
   position: absolute; /* 絕對定位固定在底部 */
-  bottom: 50px;
+  bottom: 4.63vh; /* 50px -> 4.63vh */
   left: 50%;
   transform: translateX(-50%); /* 水平置中 */
   text-transform: uppercase;
 
   /* 3. 文字樣式 */
-  font-size: 28px;
+  font-size: 1.46vw; /* 28px -> 1.46vw */
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0;
@@ -167,9 +167,9 @@ p {
   transition: all 0.1s ease-in-out;
   z-index: 9999;
   user-select: none;
-  border: 2px solid transparent;
+  border: 0.1vw solid transparent; /* 2px -> 0.10vw */
   box-sizing: border-box;
-  padding-top: 4px; /* 字體微調 */
+  padding-top: 0.37vh; /* 4px -> 0.37vh */
 }
 
 /* 樣式二：NEXT 按鈕顏色與 Hover 效果 */
@@ -181,23 +181,24 @@ p {
 .btn-secondary:hover {
   background-color: var(--primary-purple);
   color: var(--primary-yellow);
-  box-shadow: 0 0 15px var(--primary-purple);
+  box-shadow: 0 0 15px var(--primary-purple); /* 保持 15px */
 }
 
 .btn-secondary:active {
   /* Active 狀態縮小效果 */
-  width: 172px;
-  height: 72px;
-  font-size: 24px;
+  width: 8.96vw; /* 172px -> 8.96vw */
+  height: 6.67vh; /* 72px -> 6.67vh */
+  font-size: 1.25vw; /* 24px -> 1.25vw */
   transform: translateX(-50%);
 }
+
 /*提醒文字*/
 .warning-text {
   position: absolute;
   left: 50%;
-  bottom: 140px;
+  bottom: 12vh;
   transform: translateX(-50%);
-  font-size: 20px;
+  font-size: 1.04vw;
   color: var(--primary-yellow);
   opacity: 0; /* 一開始看不到 */
   pointer-events: none; /* 不要擋到滑鼠 */
@@ -207,7 +208,7 @@ p {
 /* 顯示時套這個 class */
 .warning-text.show {
   opacity: 1;
-  transform: translateX(-50%) translateY(-4px);
+  transform: translateX(-50%) translateY(-0.37vh);
 }
 
 /* ========================================================= */
@@ -216,17 +217,17 @@ p {
 
 /* 進度條容器 */
 .progress-bar-container {
-  margin: 50px 0 0 0; /* 距離頂部 50px */
+  margin: 4.63vh 0 0 0; /* 50px -> 4.63vh */
 }
 
 .progress-bar-container img {
-  width: 184px;
-  height: 40px;
+  width: 9.58vw; /* 184px -> 9.58vw */
+  height: 3.7vh; /* 40px -> 3.70vh */
 }
 
 /* 標題與副標題區塊 */
 .selection-title {
-  margin: 40px 0 0 0; /* 距離進度條 40px */
+  margin: 3.7vh 0 0 0; /* 40px -> 3.70vh */
 }
 
 /* 輪播外部容器 */
@@ -236,14 +237,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px 0 0 0; /* 距離標題 100px */
+  margin: 9.26vh 0 0 0; /* 100px -> 9.26vh */
 }
 
 /* 3D 轉盤設定 (Wrapper) */
 .carousel-3d-wrapper {
   position: relative;
-  width: 1000px;
-  height: 400px;
+  width: 52.08vw; /* 1000px -> 52.08vw */
+  height: 37.04vh; /* 400px -> 37.04vh */
   display: flex;
   justify-content: center;
 }
@@ -254,7 +255,7 @@ p {
   top: 50%;
   left: 50%;
   transform-origin: center center;
-  width: 300px;
+  width: 15.63vw; /* 300px -> 15.63vw */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,13 +275,13 @@ p {
 .pagination-dots {
   display: flex;
   justify-content: center;
-  gap: 17px; /* 圓點間距 */
-  margin: 110px 0 0 0; /* 距離輪播區塊 110px */
+  gap: 0.88vw; /* 17px -> 0.88vw */
+  margin: 12vh 0 0 0; /* 110px -> 10.19vh */
 }
 
 .dot {
-  width: 17px;
-  height: 17px;
+  width: 0.88vw; /* 17px -> 0.88vw */
+  height: 1.57vh; /* 17px -> 1.57vh */
   background-color: #ffffff;
   border-radius: 50%;
   opacity: 0.4;
@@ -313,13 +314,13 @@ p {
 }
 
 .carousel-item.pos-left {
-  transform: translate(-185%, -50%) scale(0.8); /* 左側縮小 */
+  transform: translate(-200%, -50%) scale(0.8); /* 左側縮小 */
   z-index: 5;
   opacity: 0.4;
 }
 
 .carousel-item.pos-right {
-  transform: translate(85%, -50%) scale(0.8); /* 右側縮小 */
+  transform: translate(100%, -50%) scale(0.8); /* 右側縮小 */
   z-index: 5;
   opacity: 0.4;
 }
@@ -329,6 +330,7 @@ p {
   z-index: -1;
   opacity: 0;
 }
+
 .carousel-item.pos-center:hover label {
   animation: opacityPulse 1.4s ease-in-out infinite;
   cursor: pointer;
@@ -388,13 +390,13 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 60px;
-  height: 60px;
+  width: 3.13vw; /* 60px -> 3.13vw */
+  height: 5.56vh; /* 60px -> 5.56vh */
   border-radius: 50%;
   background-color: var(--primary-yellow);
   color: var(--primary-purple);
   border: none;
-  font-size: 24px;
+  font-size: 1.25vw; /* 24px -> 1.25vw */
   cursor: pointer;
   display: flex;
   align-items: center;
