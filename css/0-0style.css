@@ -223,7 +223,7 @@ h3 {
 .center-floating-video {
   position: absolute; /* 絕對定位：讓它浮起來 */
   top: 50%; /* 垂直位置：螢幕一半 */
-  left: 50%; /* 水平位置：螢幕一半 */
+  left: 49%; /* 水平位置：螢幕一半 */
   transform: translate(-50%, -55%); /* 校正回正中央 */
 
   width: 59.9vw; /* ★ 你可以在這裡調整影片寬度 */
