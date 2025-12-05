@@ -649,7 +649,7 @@ const RESULT_POOL = {
     },
     {
       title: "〈WAIT〉瘦子E.SO",
-      desc: "",
+      desc: "這首歌帶著明確的嘻哈節奏，鼓點俐落、有彈性，像是在步伐裡打出自信的節拍。旋律簡潔直接，沒有多餘裝飾，讓整體聽起來乾淨又充滿態度，人聲的表現帶著些許挑釁與玩味。",
       spotifyUrl:
         "https://open.spotify.com/embed/track/0TYt1vngPocfkK2YHvu7Ze?utm_source=generator",
     },
