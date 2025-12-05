@@ -732,6 +732,238 @@ const RESULT_POOL = {
         "https://open.spotify.com/embed/track/5Cmv9VX8BjxKELcHG3uGx9?utm_source=generator",
     },
   ],
+  "1-1-2-0": [
+    {
+      title: "〈M2M〉CODY JON",
+      desc: "曖昧的感覺就像是毒品，Cony Jon的M2M就是對這份感受最好的詮釋，歌詞描述與曖昧對象的誤會和對未來的想像，一切就像是一場夢一樣，夢幻但又虛假，這並不是什麼專一的愛，而是朋友和情人中間那若即若離的關係。M2M的編曲非常創新，融合了2000年的pop / r&b和jazz讓你猜不到接下來的節奏，副歌後的變奏和風格轉換就像這段關係一樣，捉摸不定。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/3d4WE2mXks9S6qyxUABSmv?utm_source=generator",
+    },
+    {
+      title: "〈Come around me〉Justin Bieber",
+      desc: "慵懶的節拍營造出濃厚的 R&B 臥室氛圍。這首歌是對親密關係最直白的渴望——不需要過多的言語，只需要體溫與觸碰。如果你喜歡那種黏膩卻不沈重、充滿鬆弛感的戀愛狀態，這首自帶濾鏡的歌曲，能完美重現兩人膩在一起、無所事事卻無比滿足的午後時光。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/2o9LAypwGH4ctV0i9boo6d?utm_source=generator",
+    },
+    {
+      title: "〈Thunder〉Seventeen",
+      desc: "這首歌像一道瞬間劈進身體的雷光，節奏強烈俐落，帶著逼人前進的衝勁。鼓點與低頻像電流一路竄上心臟，讓情緒不自覺被拉高。旋律乾脆、節奏感明確，整體氛圍既振奮又帶著一點緊繃，像在風暴中心奔跑。它給人的不是壓抑，而是一種被雷擊般的醒悟與爆發感。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6oeMntjclWLoguzwj5ECTo?utm_source=generator",
+    },
+    {
+      title: "〈IS THIS LOVE〉XG",
+      desc: "節奏慵懶、旋律流暢，帶些迷幻感的和聲與細緻的節拍是 XG 擅長的高質感 R&B 風格。歌詞融合自信與脆弱——既被對方牽動，又不想丟掉主導權，呈現出 XG 一貫的酷感與女性主體性。整首歌像是在問：這份電流般的吸引，是愛、上癮，還是危險？",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0dzbNEBsrs17os3jJOFLar?utm_source=generator",
+    },
+  ],
+  "1-1-0-2": [
+    {
+      title: "〈I like the way you kiss me〉Artemas",
+      desc: "低沈的貝斯線條與帶有侵略性的歌詞，營造出一種危險的性張力。這不是甜言蜜語，而是關於肉體吸引與情感疏離的拉扯。如果你厭倦了過度糖衣包裝的愛情，偏愛那種有點壞、有點渣，卻真實得令人上癮的氛圍，這首歌是你的最佳配樂。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/3JG1uFc40wfyrqaWC7iv0e?utm_source=generator",
+    },
+    {
+      title: "〈Manchild〉Sabrina Carpenter",
+      desc: "這首流行（Pop）歌曲結合輕快節奏與R&B元素，旋律討喜、語氣帶點玩味與嘲諷。以幽默又帶刺的方式批判「巨嬰」──外表是大人，行為卻幼稚、自我中心、不懂負責。歌曲用輕鬆的語氣吐槽對方，暗示自己已經看穿並準備離開。整體呈現一種俏皮但清醒的女性視角",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/42UBPzRMh5yyz0EDPr6fr1?utm_source=generator",
+    },
+    {
+      title: "〈IRIS OUT〉米津玄師",
+      desc: "這首歌以誇張的身體比喻表現「快要失控的戀愛執著」。主角被迷戀沖昏頭，理智在腦內尖叫卻無法阻止。血液、瞳孔放大的意象象徵壓倒性的心動與混亂，像被對方的存在擊中要害。歌詞充滿中二、暴走、甜膩又危險的情緒。核心主題是——對方的可愛，是足以毀滅人理智的致命級魅力。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/59hVbgr8rfYkDbHfr8RcGI?utm_source=generator",
+    },
+    {
+      title: "〈一定要相信自己〉盧廣仲",
+      desc: "你的選擇帶著一種安靜的克制，情緒被整理得很柔，像一句輕聲放在心底的提醒。表面平穩，深處卻泛著淡淡的悲傷，像走過疲憊後留下的陰影。其間透出的冷亮感簡潔、現代，讓整體更顯得透明。像一束微弱卻持續的光，在低落中慢慢撐著自己。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/16JnRultn7tptNHMBe94w3?utm_source=generator",
+    },
+  ],
+  "2-0-1-1": [
+    {
+      title: "〈Everything is romantic featuring caroline polachek〉Charli xcx",
+      desc: "Hyperpop × Dream Pop 的混合風格。節奏輕盈跳動、合成器線條柔軟飄逸，呈現超現實又甜膩的氛圍。無論是被雨淋濕、宿醉、失眠、街景或自我映照，一切看似不完美的片刻，因為愛或因為被某人牽動，而變得充滿美感。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/4cCnCDJZDLGDIdnxRfOUBn?utm_source=generator",
+    },
+    {
+      title: "〈make you mine〉Madison Beer",
+      desc: "性感的律動與極具誘惑力的聲線，展現了自信女性的主動出擊。這首歌充滿了費洛蒙與曖昧的遊戲感。如果你喜歡那種在感情中掌握主導權、大膽追求所愛的自信氛圍，這首充滿魅力的舞曲會讓你覺得自己無比耀眼。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/48vIfHaK7by6x0T6ucpODL?utm_source=generator",
+    },
+    {
+      title: "〈skeletons〉keshi",
+      desc: "你的選擇散發出一種柔和卻安靜的氣息，像藏在夜裡的微光，乾淨而不喧嘩。情緒被收得很好，線條細緻，帶著優雅的克制。其間也透著冷色質地的現代感，讓整體更顯得透明、極簡。像是一段在靜默中被看見的呼吸節奏，溫柔而內斂。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/2BuJrxYKhYky20dQqTlobO?utm_source=generator",
+    },
+    {
+      title: "〈Love Like This〉Fujii Kaze",
+      desc: "開頭節拍就很有力，像心跳被催促，鼓點有彈性、重低頻清晰，把空氣震得有重量。旋律簡潔，不刻意華麗，反而用留白讓節奏與聲線主導整個氛圍。聽著會讓人想自然晃動、身體跟著節拍起來。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/1eULGMOdkcFd3xTD1zh2f5?utm_source=generator",
+    },
+  ],
+  "0-2-1-1": [
+    {
+      title: "〈so far so fake〉Pierce The Veil",
+      desc: "高能量的吉他 Riffs 與撕裂般的唱腔，是千禧世代的文藝復興。那種對於虛偽人際關係的憤怒與失望，化作最直接的音牆衝撞。如果你骨子裡藏著一股不願被馴服的叛逆，或懷念那種將情緒毫無保留宣洩出來的痛快，這首歌會燃起你心中的火焰。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/3fWibgdtgIie6LKTZ2rUoI?utm_source=generator",
+    },
+    {
+      title: "〈Snooze〉SZA",
+      desc: "絲滑如綢緞般的聲線，將時間凝結在戀人相擁的午後。這首歌是對「當下」的極致貪戀，歌詞訴說著寧願犧牲睡眠也不願錯過與對方共處的每一秒。如果你追求那種靈魂與肉體高度契合、只想溺死在對方溫柔裡的親密關係，這首極度浪漫且性感的慢板情歌，會讓你感到無比酥麻。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/4iZ4pt7kvcaH6Yo8UoZ4s2?utm_source=generator",
+    },
+    {
+      title: "〈hello miss johnson〉Jack Harlow",
+      desc: "你的選擇帶著一種街頭塗鴉般的節奏感，隨性、輕巧，像在城市牆面留下半句玩笑。線條凌亂卻有自己的美感，情緒在其中跳動得很自然。深處偶爾透出冷色的光，是新潮的質地，簡潔又帶著些許距離。整體氛圍介於輕鬆與深處之間，像一段帶笑意的暗夜塗鴉。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6gH1UKDAhWS6qXzKXB4wuY?utm_source=generator",
+    },
+    {
+      title: "〈Loser〉BigBang",
+      desc: "節奏纏繞著憂鬱，旋律低沉卻讓人無法轉移視線。歌聲像深夜裏的低語，帶著對失敗、迷惘、孤立的自省。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/2vzn8usBcuNL93DnTjEK0z?utm_source=generator",
+    },
+  ],
+  "0-1-2-1": [
+    {
+      title: "〈Constant Repeat〉Charli xcx",
+      desc: "迷幻的合成器音色與無限循環的歌詞，營造出一種對逝去戀情的執著與回味。這是一種在舞池中央流淚的浪漫。如果你是一個念舊且感性的人，喜歡反覆咀嚼某個珍貴的回憶片段，這首歌的循環感會像漩渦一樣，溫柔地將你捲入回憶深處。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0U9ltIN4q3aBKGZDZq5cAW?utm_source=generator",
+    },
+    {
+      title: "〈STUPID IDIOT〉Hoshi X Woozi",
+      desc: "節拍跳動得像停不下來的彈跳球，整體充滿滑稽又上頭的衝勁。旋律刻意做得黏且洗腦，兩人的互動像在打鬧、吐槽。合成器音色明亮有彈性，聽起來輕快、搞怪。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/298BoO0FqEs3hfwO4K86fI?utm_source=generator",
+    },
+    {
+      title: "〈Luxury〉KVGGLV",
+      desc: "這首歌是 KVGGLV 的街頭奢華宣言，重低音節拍像加速的引擎，Rap flow 簡潔坦率，不拐彎也不客套。歌詞裡的 Prada、Maybach、Balenciaga，不只是品牌，而是態度象徵。宣告著：我是我的 style，真與偽，我自己分得清。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6HxSjcMspAG2hwrPsMjtZK?utm_source=generator",
+    },
+    {
+      title: "〈Hot In IT(feat.Charli XCX)〉Tiësto, Charli xcx",
+      desc: "自信爆棚的復仇系舞曲，節奏明亮且充滿彈性。這首歌告訴你：分手後最好的報復就是讓自己變得火辣且無法高攀。如果你喜歡那種能瞬間提升自信、讓你走路帶風的 BGM，這首充滿能量的舞曲會讓你覺得自己是世界的主角。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/5pNFibJLq7dvoDVIIcQBkn?utm_source=generator",
+    },
+  ],
+  "0-1-1-2": [
+    {
+      title: "〈superstar〉Artemas",
+      desc: "這首充滿黑暗美學的電子合成樂將情感和慾望以躁動的音符重擊心臟。像是將愛人化作心中完美的繆思女神，這首歌在描寫一段強烈到近乎上癮的迷戀關係，對方的觸碰、氣味、嘴唇像毒品般讓人上癮，既渴望又清醒，既沉醉又痛苦。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/2Zq3Trov36G0TtrUt4ZklL?utm_source=generator",
+    },
+    {
+      title: "〈Just Break Up〉婁峻碩SHOU,TYSON YOSHI",
+      desc: "這首歌聽起來像是在午夜用力呼吸——節奏有力卻不失靈動，像心跳忽快忽慢，被一股不可見的力量牽著走，歌聲帶著一絲哀傷與壓抑。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/3Kds30QtZgGTwvMaPqRQiU?utm_source=generator",
+    },
+    {
+      title: "〈GO LUV URSELF〉karencici",
+      desc: "這首歌聽起來像一首搖滾味的情緒發洩。讓整體多了幾分「帥」跟「不服氣」，旋律是有角度、有稜角的起伏，聽起來像一邊咬牙、一邊把話說開。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0ogcq4tghtilklBtRaxF4K?utm_source=generator",
+    },
+    {
+      title: "〈TOMBOY〉I-DLE",
+      desc: "粗糙的吉他 Riff 與直率的歌詞，狠狠撕碎了世俗對「完美女孩」的刻板印象。這不是為了討好誰而存在的旋律，而是一場拒絕被馴服的覺醒。這首充滿態度與中性魅力，渴望展現那種有點壞、不修邊幅卻帥氣爆表的真實自我。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/5L7MoCA875qqRJoKnGCxkE?utm_source=generator",
+    },
+  ],
+  "2-1-0-1": [
+    {
+      title: "〈Heartbreak anniversary〉Givēon",
+      desc: "你的選擇輕輕透出一種細緻的質感，像雨後殘留的霧氣，在邊緣處慢慢散開。情緒是柔的，帶著優雅的弧度，不急、不重，只留下被時間打磨過的光。其間又藏著一點清爽的氣息，像風把心事推動一小步。深處偶爾浮現暗色的紋理，並不鋒利，只是靜靜存在，讓整個氛圍多了一層深度。整體像一段輕聲的餘韻，安穩、透明，微微帶著陰影。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/3FAJ6O0NOHQV8Mc5Ri6ENp?utm_source=generator",
+    },
+    {
+      title: "〈birds of a feather〉billie eillish",
+      desc: "復古的合成器音色帶來一種溫暖的懷舊感。這首歌是對「永遠」的承諾，即便世界毀滅也要在一起的偏執。如果你相信靈魂伴侶，喜歡那種「無論生死都要黏在一起」的極致依戀，這首歌那種近乎信仰的深情會讓你感到溫暖又沈重。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6dOtVTDdiauQNBQEDOtlAB?utm_source=generator",
+    },
+    {
+      title: "〈We fell in love in october〉girl in red",
+      desc: "溫暖的吉他聲與真摯的低語，是秋日戀曲的代名詞。這首歌不追求華麗的技巧，只在乎那份想被對方看見的悸動。如果你嚮往那種純粹、溫柔，像是在落葉堆中並肩躺著的戀愛氛圍，這首歌會給你如同擁抱般的溫暖安全感。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6IPwKM3fUUzlElbvKw2sKl?utm_source=generator",
+    },
+    {
+      title: "〈Hana〉Fujii Kaze",
+      desc: "旋律柔軟又有點灰，伴隨著淡淡的憂鬱感，但鼓點與節奏線卻讓情緒不至於完全下沉。整體氛圍是安靜的動感，卻有一股持續推動的力道，讓人聽著彷彿在微微晃動的情緒裡前進。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/5RIQU2JDuXC4NkLiHNNMon?utm_source=generator",
+    },
+  ],
+  "1-2-0-1": [
+    {
+      title: "〈Ditto〉NewJeans",
+      desc: "冬日的霧氣與心跳般的 Baltimore Club 鼓點共振，營造出濃厚的校園懷舊感。歌詞中的 Ra-ta-ta-ta 是急促的心跳，描寫了想要確認心意卻又不敢太過張揚的青澀。如果你喜歡那種帶有空氣感、既溫暖又微涼的曖昧氛圍，這首歌能瞬間喚醒你記憶中某個冬天的心動與等待。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/5702raF31K9rvD6KZ6sCTo?utm_source=generator",
+    },
+    {
+      title: "〈ヒッチコック〉ヨルシカ",
+      desc: "聽起來輕快、明亮，像青春裡的大量問號同時被甩到天空。吉他和鼓點一路往前衝，但歌詞卻不停把人拉回那些關於生活、意義與「長大之後該怎麼辦」的執念。曲中沒有直接給答案，只把那種悶悶的無力與想逃跑的心包進旋律裡。像是在追著一個永遠抓不住的夏天。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/153lRbNmhQZVi69kbhmjY8?utm_source=generator",
+    },
+    {
+      title: "〈vivi〉米津玄師",
+      desc: "這是夜裡靜靜滑過的告別車窗，也是街燈下牢記的溫柔思念。米津玄師用細膩的旋律和稍帶沙啞的嗓音，把記憶、離別、無法言說的感情放入歌中。悲傷卻帶著美感，回憶雖殘缺但又真實。就像把過去放進行李後，坐上末班車離開，但那份心跳與淡淡溫柔，你會一直記得。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/3izOZelMZaCC0MMabvssCw?utm_source=generator",
+    },
+    {
+      title: "〈未接來電〉莫宰羊",
+      desc: "流暢的 Flow 包裹著失落的情緒，將「錯過」的遺憾具象化為那一通通未接來電。這不是聲嘶力竭的哭喊，而是淡淡的無奈。如果你曾在感情中感到無力回天，這種「想念卻無法觸及」的真實感，會刺痛你心中最柔軟的角落。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0TxUdhT7OWGLtcEgfKvMLJ?utm_source=generator",
+    },
+  ],
+  "1-0-2-1": [
+    {
+      title: "〈Strangers〉Kenya Grace",
+      desc: "輕盈急促的 DnB 鼓點搭配憂鬱的女聲，完美捕捉了現代速食愛情中「從親密變陌生」的失落感。節奏很快，卻讓人感到異常的孤單。若你常在夜間駕駛或獨自散步，這種如流水般滑順卻帶著涼意的節奏，能精準描繪出都市夜色中的疏離與流動。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/593knnQN4REEshx8th9zgK?utm_source=generator",
+    },
+    {
+      title: "〈Toxic till the end〉ROSÉ",
+      desc: "淒美的旋律訴說著一段互相折磨的關係。歌詞承認了關係的毒性，卻又無法割捨。這是一種清醒的沈淪。如果你曾深陷一段「相愛相殺」的感情，明知沒有結果卻消耗了最美好的年華，這首歌會像鏡子一樣映照出你最心碎的樣子。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/1z5ebC9238uGoBgzYyvGpQ?utm_source=generator",
+    },
+    {
+      title: "〈終究還是因為愛〉TRASH",
+      desc: "激昂的吉他 Solo 與嘶吼，是對生命最熱血的告白。歌詞傳達了「愛是所有痛苦與救贖的根源」。如果你是一個重感情、相信愛能戰勝一切的人，這首歌那種燃燒生命般的熱度，會讓你熱淚盈眶，感受到靈魂的共振。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/53yiHIP3ptxWtT4ambRcgb?utm_source=generator",
+    },
+    {
+      title: "〈Only In My Mind〉Kenya Grace",
+      desc: "輕盈的 DnB 節奏，這首歌強調了夢境般的沈浸感。歌詞模糊了現實與幻想的邊界，像是一場清",
+    },
+  ],
 };
 
 //抽其中一個結果的函式
