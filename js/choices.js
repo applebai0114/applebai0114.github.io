@@ -212,6 +212,666 @@ const RESULT_POOL = {
         "https://open.spotify.com/embed/track/7fBv7CLKzipRk6EC6TWHOB?utm_source=generator",
     },
   ],
+  "3-1-0-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "3-0-1-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "3-0-0-1": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "1-3-0-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-3-0-1": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "1-0-3-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-1-3-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-0-3-1": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "1-0-0-3": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-1-0-3": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-0-1-3": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "2-2-0-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "2-0-2-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "2-0-0-2": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-2-2-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-2-0-2": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-0-2-2": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "2-1-1-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "1-2-1-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "1-1-2-0": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "1-1-0-2": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "2-0-1-1": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-2-1-1": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-1-2-1": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "0-1-1-2": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "2-1-0-1": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "1-2-0-1": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "1-0-2-1": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "1-0-1-2": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
+  "1-1-1-1": [
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+    {
+      title: "〈Bad Girls〉Nicolas Julian",
+      desc: "",
+      spotifyUrl: "",
+    },
+  ],
 };
 
 //抽其中一個結果的函式
