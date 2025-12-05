@@ -84,7 +84,7 @@ h3 {
   color: rgb(255, 255, 255);
   position: relative; /* 確保能進行位移動畫 */
   text-align: center;
-  opacity: 74%;
+  opacity: 10%;
   /* 由於影片區塊是 fixed 且全屏，這裡的 margin 僅影響動畫的初始位置，
      但動畫開始後會被 JS (GSAP) 的 x/y 屬性控制。 */
 }
@@ -224,9 +224,9 @@ h3 {
   position: absolute; /* 絕對定位：讓它浮起來 */
   top: 50%; /* 垂直位置：螢幕一半 */
   left: 50%; /* 水平位置：螢幕一半 */
-  transform: translate(-50%, -50%); /* 校正回正中央 */
+  transform: translate(-50%, -55%); /* 校正回正中央 */
 
-  width: 1000px; /* ★ 你可以在這裡調整影片寬度 */
+  width: 1150px; /* ★ 你可以在這裡調整影片寬度 */
   height: auto; /* 高度自動 */
   z-index: 5; /* 層級：設為 5 確保浮在背景之上 */
 }
