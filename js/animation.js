@@ -54,18 +54,46 @@ if (topTextBlockElement && middleTextBlockElement) {
 }
 
 // ---  GSAP 動畫 (通常只在首頁/入場頁需要) ---
-const coverText = document.querySelector(".cover_text");
-if (coverText) {
-  let tl = gsap.timeline();
-  tl.fromTo(coverText, { x: -2393.8953, y: 0 }, { x: 0, y: 0, duration: 1.17 });
+const screenW = window.innerWidth;
+
+// ===============================
+// 左邊大字（cover_text）
+// ===============================
+const leftText = document.querySelector(".cover_text");
+if (leftText) {
+  gsap.set(leftText, { x: -screenW }); // 起始位置在左外側
+
+  let tlLeft = gsap.timeline({ repeat: -1 });
+
+  tlLeft
+    .to(leftText, { x: 0, duration: 1.2, ease: "power2.out" }) // 左 → 中
+    .to({}, { duration: 1 }) // 中停
+    .to(leftText, { x: screenW, duration: 1.2, ease: "power2.in" }) // 中 → 右外
+    .to({}, { duration: 0.5 }) // 出畫面後停留時間
+    .set(leftText, { x: screenW })
+    .to(leftText, { x: 0, duration: 1.2, ease: "power2.out" }) // 右 → 中
+    .to({}, { duration: 1 }) // 中停
+    .to(leftText, { x: -screenW, duration: 1.2, ease: "power2.in" }) // 中 → 左外
+    .to({}, { duration: 0.5 }); // 出畫面後停留時間
 }
 
-const cover_text_two = document.querySelector(".cover_text_two");
-if (cover_text_two) {
-  let tl = gsap.timeline();
-  tl.fromTo(
-    cover_text_two,
-    { x: 2393.8953, y: 0 },
-    { x: 0, y: 0, duration: 1.17 }
-  );
+// ===============================
+// 右邊大字（cover_text_two）
+// ===============================
+const rightText = document.querySelector(".cover_text_two");
+if (rightText) {
+  gsap.set(rightText, { x: screenW }); // 起始位置在右外側
+
+  let tlRight = gsap.timeline({ repeat: -1 });
+
+  tlRight
+    .to(rightText, { x: 0, duration: 1.2, ease: "power2.out" }) // 右 → 中
+    .to({}, { duration: 1 }) // 中停
+    .to(rightText, { x: -screenW, duration: 1.2, ease: "power2.in" }) // 中 → 左外
+    .to({}, { duration: 0.5 }) // 出畫面後停留
+    .set(rightText, { x: -screenW })
+    .to(rightText, { x: 0, duration: 1.2, ease: "power2.out" }) // 左 → 中
+    .to({}, { duration: 1 }) // 中停
+    .to(rightText, { x: screenW, duration: 1.2, ease: "power2.in" }) // 中 → 右外
+    .to({}, { duration: 0.5 }); //  出畫面後停留
 }
