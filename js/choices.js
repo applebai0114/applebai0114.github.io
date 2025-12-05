@@ -474,376 +474,262 @@ const RESULT_POOL = {
   ],
   "0-1-0-3": [
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Azimuth〉Danny L Harle, Caroline Polachek",
+      desc: "空靈的女聲與史詩般的電子合成器，融合了 Trance 的迷幻與 Art Pop 的優雅。這首歌像是一場星際穿越，將意識抽離地表，飛向浩瀚的宇宙。如果你喜歡那種宏大、且能讓思緒飄得更遠的音樂景觀，這首作品能營造出一個暫時脫離現實瑣碎的真空時刻。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/5eLQyZ8kZKFRukO1mIAXKQ?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Bad boy〉BigBang",
+      desc: "這首歌讓人感覺像在夜色中獨自前行 — 旋律柔和卻帶著一絲飄渺，聲音溫柔中藏著淡淡的憂傷。節奏不急不緩，有種在回想與釋放之間徘徊的情緒。聆聽時彷彿整個世界變得遙遠，而心裡的思緒被慢慢拉出來，柔軟而真實。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/7GLlnuHjYIKy3YR59ziaQe?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈死ぬのがいいわ〉Fujii Kaze",
+      desc: "節奏穩健但不急，像心跳的餘震持續在擴散。旋律柔中帶冷，讓人感到一絲疏離，像在喃喃自語又不願被看見。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0HYAsQwJIO6FLqpyTeD3l6?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Hold On〉高爾宣 & 派偉俊",
+      desc: "這首歌節奏輕快、充滿推動感，彷彿逼著情緒往前走，但底層卻透出一股淡淡的憂傷與無奈。旋律明亮，情緒卻像被風吹散，輕飄卻揪著心。那種感覺像是勉強自己跟著節奏前進，卻仍帶著解不開的重量。整首歌呈現出外放與內斂交錯的矛盾氛圍，既想灑脫，也藏著寂寞。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/580BvW3DyUNoYFgQgoD2GI?utm_source=generator",
     },
   ],
   "0-0-1-3": [
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Poker Face〉Lupage, Joe Kox",
+      desc: "將經典流行曲重塑為充滿攻擊性的 Phonk 風格，低沈的 Bassline 與快節奏賦予了它全新的暗黑能量。這是一種隱藏情緒的武裝，像是戴著面具在深夜的街頭疾行。若你偏好那種具有強烈壓迫感、適合夜間駕駛或高強度運動的節奏，這種冷酷的聽感會讓你感到格外過癮。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/1QV6tiMFM6fSOKOGLMHYYg?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈ビターチョコデコレーション〉初音ミク、syudou",
+      desc: "歌詞描繪了為了合群而扼殺個性、強迫自己扮演「正常人」的痛苦過程。初音冷漠的唱腔結合中毒性旋律，完美演繹出「笑著崩潰」、在壓抑中逐漸瘋狂的心境，是獻給所有戴著假面具生存者的殘酷童話。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6JFD96zWsIdGPqLOTVE1uU?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈SHEESH〉BABYMONSTER",
+      desc: "陰森的鋼琴前奏轉入重型 808 Bass，營造出強烈的驚悚感與壓迫力。這是一場關於實力的炫耀，用一聲 SHEESH 讓質疑者閉嘴。這首歌氣場強大、帶點邪氣與傲慢。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/1njlnn8ZKHI77Pe9szIONR?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈美好的事可不可以發生在我身上〉康士坦的變化球",
+      desc: "層層堆疊的吉他音牆與撕心裂肺的吶喊，是 Post-Rock 最具爆發力的宣洩。這首歌唱出了當代青年的集體焦慮，是對命運最卑微的提問。如果你容易被音樂中的「敘事性」與「爆發力」打動，這首從壓抑到徹底釋放的編制，能精準承接你心中那些無處安放的情緒。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/1viPIivqn5vmMsFUk5CJnw?utm_source=generator",
     },
   ],
   "2-2-0-0": [
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Summer〉Keshi",
+      desc: "這首歌像被陽光慢慢曬暖的午後風，吉他的清亮勾出一種輕盈的節奏感，情緒柔得像被薄棉包住。旋律在耳邊輕輕散開，不急不重，像夏日裡最剛好的微風，把心情推向透明又自在的狀態。整首歌像在記錄一段溫柔的日光旅程，優雅而輕快，帶著能讓人放鬆下來的暖意與亮度。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0LqCvXVNvcnkq78sCQsoO0?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Paris in the rain〉Lauv ",
+      desc: "輕脆的吉他聲與雨聲採樣，營造出極致的 Chill Pop 氛圍。這首歌將愛情具象化為巴黎的雨夜，濕潤、溫暖且浪漫。如果你是一個注重生活情調的人，這首歌能瞬間將你周遭的空氣，染上一層昏黃而溫柔的電影濾鏡。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/2WdAV1VqmllcEznKlVOFxG?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈small girl〉李泳知/D.O.",
+      desc: "旋律乾淨透亮，讓情緒不自覺被拉得更輕，像在日光灑落的午後慢慢醒來。它沒有強烈的壓力，是一種讓人心房慢慢鬆開的舒適感。整體氛圍治癒、溫暖，像被輕輕拍拍肩膀。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/1AtFSBJibfaqfiOByQCwZ5?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈any song〉zico",
+      desc: "輕快的鋼琴 Riff 與慵懶的 Flow，是社恐在派對上的最佳解藥。歌詞道出了現代人對社交的疲憊與無聊，只想隨便放首歌跟著點頭，逃離尷尬的對話。如果你常在熱鬧的人群中感到孤單，只想沈浸在自己的小世界裡隨性搖擺，這首帶著「無所謂」態度的歌，會讓你感到無比自在與放鬆。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/1iIhGHzzrzqQfuNkFI2qAn?utm_source=generator",
     },
   ],
   "2-0-2-0": [
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Party 4 U〉Charli xcx",
+      desc: "在 Bubblegum Bass 的派對節奏下，藏著一顆最卑微、最真摯的心。這首歌描寫了為了某人精心準備一切的忐忑與期待。若你喜歡那種「外殼堅硬、內核柔軟」的音樂反差，這種在人工合成的甜美音效中包裹著真實心碎的聽感，會讓你感到既浪漫又酸楚。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/2RdEC8Ff83WkX7kDVCHseE?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Girl, so confusing featuring Lorde〉Carli xcx",
+      desc: "Alt-Pop 的編曲極簡卻充滿張力。在標誌性的工業電子躁動中，兩人打破了外界長年投射的女性對立劇本。歌詞赤裸地剖析了女性情誼中那些由羨慕、不安與誤解交織而成的複雜暗流。這首將私密的焦慮轉化為集體共感的作品，展現了女性之間最深刻的連結與救贖。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/7srqyRb5plksW5k65itXDB?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈醉後喜歡我〉冰球樂團",
+      desc: "霓虹燈閃爍的 City Pop 旋律，加上搖擺的 Funk 節奏，營造出微醺時分的曖昧氣氛。藉著酒意說出真心話，是成年人特有的浪漫與狡猾。如果你喜歡那種帶有復古韻味、且能營造出戀愛氛圍的律動，這首歌曲能完美重現那種在理智與衝動邊緣徘徊的朦朧美感。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/13FewTw13JlIFG7fb4ROsA?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈I GOT YOU〉TWICE",
+      desc: "疾馳的節奏與明亮的合成器音色，像是一場迎風破浪的航行。這首歌歌頌著堅不可摧的羈絆，無論世界如何動盪，只要有彼此就能穿越風暴。如果你珍視那種「無條件支持」的夥伴情誼，或正在尋找一股向前的動力，這首充滿陽光與動能的歌曲，會給你滿滿的勇氣與希望。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0mgveJEIGjcN51w4JIQtI6?utm_source=generator",
     },
   ],
   "2-0-0-2": [
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Kill Bill〉SZA",
+      desc: "甜美慵懶的聲線下藏著極致的瘋狂，這首 R&B 將嫉妒與佔有慾演繹得淋漓盡致。如果你迷戀那種「愛到想毀了你」的病態浪漫，這種在絲滑旋律中訴說血腥幻想的反差感，會精準擊中你心中那個渴望極致情感的小惡魔。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/3OHfY25tqY28d16oZczHc8?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈JANE DOE〉米津玄師、宇多田光",
+      desc: "這首歌陰鬱而浪漫，以夢境般的意象描寫一段扭曲卻強烈的依戀。主角一邊受傷、一邊留下「請你找到我」的訊號，像在黑暗中渴求被拯救。歌詞核心是：明知是短暫的幻夢，仍想抓住彼此—哪怕要以痛苦換來靠近。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/4oE7MyJhqSD3BaHRpNs8Nl?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Plastic Love〉竹内まりや",
+      desc: "City Pop 的經典，華麗的管樂與放克節奏勾勒出 80 年代繁華都市的孤寂。那種「在人群中狂歡卻依然感到孤獨」的塑膠感愛情，雖是虛幻卻又如此迷人。如果你嚮往復古的精緻感，這首歌能帶你穿梭回那個霓虹閃爍、只談氛圍不談未來的泡沫時代。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/7rU6Iebxzlvqy5t857bKFq?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈You & Me〉Jennie",
+      desc: "月光下的剪影，強烈的節奏與夢幻的合成器交織。這首歌描寫了兩人之間無人能介入的緊密連結。如果你嚮往那種「與世界為敵，只與你共舞」的強烈羈絆，這首歌那種既性感又帶點孤傲的氛圍，會讓你深深著迷。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6xXCn7H2Yl8SDD6jxo5SpN?utm_source=generator",
     },
   ],
   "0-2-2-0": [
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Self Love〉Metro Boomin, Coi Leray",
+      desc: "從你的選擇裡浮出一種輕盈的韻律，像是把心整理得更乾淨後留下的那份明亮。情緒是往前走的，步伐輕快，帶著一點跳動的自由感。深處又隱約透著都會的冷色光，像把界線畫得剛剛好，不多、不吵，只保留自己的節奏。整體是一種清爽又帶著現代線條的氛圍，隨性、克制，而內心的力量悄悄在底部發亮。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0AAMnNeIc6CdnfNU85GwCH?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Party Jumpin'〉CID",
+      desc: "乾淨俐落的鼓點與不斷循環的洗腦 Vocal，是 Tech House 最純粹的動能。這首歌沒有多餘的情緒鋪陳，只有直球對決的舞池能量。如果你喜歡那種能讓大腦放空、身體自動接管節奏的直覺式快感，這首歌是讓你瞬間切換到派對模式的開關。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6R7qT58x43pw4LemDZGMrN?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Not like us〉Kendrick Lamer",
+      desc: "經典的 Mustard 節拍響起，這不僅是一首 Diss Track，更是一場關於「真實」的文化肅清。Kendrick 用最洗腦的彈跳節奏，精準狙擊了虛偽與文化挪用。如果你痛恨偽裝，堅持根源與正統，這首充滿攻擊性卻又讓人忍不住跟著搖擺的勝利宣言，絕對讓你大呼過癮。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6AI3ezQ4o3HUoP6Dhudph3?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈P.Y.T.〉Ｍasiwei / Asen",
+      desc: "這是都市夜晚的自信宣言，Jersey Club 節奏乾脆有力，饒舌流暢直擊胸口。歌詞裡奢華品牌、派對場景交錯，展現都市年輕人的野心與誘惑感。旋律抓耳、節奏明快，像夜色裡閃爍的霓虹，誘惑又不可捉摸，讓人一聽就被帶入這份衝動與張力。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/4BG19hfg6nz84WLqgW2DC4?utm_source=generator",
     },
   ],
   "0-2-0-2": [
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Money Buy Drugs〉Cal Scruby",
+      desc: "這是一首一上來就讓人心跳跟著加速的饒舌。猛烈的鼓點、低頻像在胸腔裡推著，讓整體聽感乾、冷、直接。Cal Scruby 的饒舌帶著壓力感，語氣像在把情緒往外甩。那種靠節奏與態度正面撞過來的力量，越聽越像被拉進一條沒有出口的夜路，只能跟著節拍往前衝。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/4LxHF9sQ6KXrxZatMPV2EL?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈幽霊東京〉Ayase",
+      desc: "在人群中迷失、在慾望都市裡找不到真正的自己，只能像幽靈般前行，既想逃離又無法停止。節奏偏快、帶工業感與電子噪音的質地，呈現冷冽、孤獨又迷離的都市感，映照著主角在夜色與霓虹裡遊走，被空虛、迷茫與自我矛盾吞沒。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6gmwKGGuoY7NAqKI3pzMPC?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Bad Influence〉Seventeen",
+      desc: "這首歌像一股緩慢卻強烈的磁場，輕輕牽動情緒深處。節奏不急，但每一下都像在敲醒心底細微的顫動。音樂中反覆堆疊的合成器與空間感效果，使情緒像被拉進一個半透明的世界，柔軟卻帶苦味",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/3cjHBmP0CsTGNN44gf6cID?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
+      title: "〈WAIT〉瘦子E.SO",
       desc: "",
-      spotifyUrl: "",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0TYt1vngPocfkK2YHvu7Ze?utm_source=generator",
     },
   ],
   "0-0-2-2": [
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Desire〉Ian Asher",
+      desc: "充滿張力的人聲採樣與重拍 Drop，營造出夏日音樂祭般的熱烈氛圍。這首歌是對慾望最直接的召喚，充滿了荷爾蒙的氣息。如果你追求那種感官被重音包圍、心跳加速的刺激感，這首充滿能量的舞曲能滿足你對熱情的渴望。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/4sMR8fuTzbUyzB0asxifV0?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈HEARTBREAKER〉G-Dragon",
+      desc: "旋律與聲線交織出既迷惘又渴望的情緒，好像站在邊緣卻又無法後退。整體氛圍充滿張力、情緒被放大，聽著會讓人心跳加速、胸口微微發熱，那種帶著痛苦卻心甘情願的吸引力，令人難以抵擋。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/4n5GvONt7Niv5In6awXHR7?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈FANTASTIC BABY〉BigBang",
+      desc: "這不只是一首歌，而是點燃腎上腺素的派對國歌。這首歌代表著一種絕對的狂歡與王者般的自信，拒絕所有沉悶與規則。如果你渴望在混亂的節奏中徹底釋放自我，享受成為聚光燈焦點的快感，這首充滿爆發力與戲劇張力的神曲，能讓你瞬間找回統治舞台的霸氣。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/26eV0R7nbqtlzh316ncU99?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈HBD〉Seventeen",
+      desc: "這首歌像是一場內心的風暴 — 節奏冷冽、聲音層層堆疊，把不安、掙扎、決心全帶出來。伴奏帶點暗色但不壓抑，像是面對未知時的恐懼與決定。歌聲裡有一種「破繭而出」的力量，讓人聽完心裡微微震動，像被喚醒般──即使前路不明，也願意硬著頭皮往前走。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6E0o3c4mgb7K5DB2TXg4XX?utm_source=generator",
     },
   ],
   "2-1-1-0": [
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈That's so true〉Gracie abrams ",
+      desc: "這首歌浮出一種細緻而安靜的層次，像柔霧在光裡慢慢散開。情緒並不張揚，卻在轉折間留下柔和的線條。步調輕盈，像被風推動的瞬間，自然地帶來一點清爽的亮度。偶爾也會透出微微的冷色光，帶著現代、簡潔的質地。整體是一種溫柔而輕巧的氛圍像悄悄保留的心緒。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/7ne4VBA60CxGM75vw0EYad?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Treasure〉Bruno Mars",
+      desc: "你的選擇散發出一種明亮而講究的氣息，像光線在金色舞池上輕輕滑過。情緒帶著優雅的圓潤感，不張揚，卻在節奏裡自然地發光。輕快的律動像是在日常中悄悄加了一點跳躍，使整體氣氛更輕盈。深處則藏著新潮的亮度，是那種簡潔、俐落、帶點魅力的光澤。整體像一段輕柔又時髦的暖色脈動。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/55h7vJchibLdUkxdlX3fK7?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈What is love?〉Twice",
+      desc: "明亮輕快的節奏與滿溢的少女心，是對愛情最純真的憧憬。歌詞透過電影情節幻想著愛情的模樣，充滿了好奇與期待。如果你內心仍保留著一份對「完美愛情」的單純嚮往，這首歌甜美的旋律會喚醒你心中那個相信童話故事的小孩。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/54mnwt3kO0uYsy0ceg14JP?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈ミスター〉YOASOBI",
+      desc: "復古的搖擺節奏搭配哀愁的旋律，帶著一點機械般的冷冽與深情。這首歌探討了跨越界線的單戀，淒美而壓抑。如果你容易被那種「無聲的守護」或「無法觸及的愛」所打動，這首節奏輕快卻底色悲涼的歌會讓你深深共鳴。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/2YbNZLoiREBYZo4HeKB8Np?utm_source=generator",
     },
   ],
   "1-2-1-0": [
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Friday's High〉Penthouse",
+      desc: "這是夜幕下的都會放克之歌：霓虹與節奏交織，用 Soul + Jazz 嗓音讓整個週末夜色瞬間被點亮。鼓點帶著 groove，旋律流動在城市燈火間，這首歌在邀你揮別煩憂、放縱今夜，用音樂慶祝屬於自己的Friday’s High。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/1UMM7yez5N3ums1cFsAAxY?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈Unexpected Trouble〉Masiwei",
+      desc: "這首歌像一場突如其來的夜航，當愛降落，你的心跳被打亂。用輕柔卻帶點壓抑的節拍包裹情緒，歌詞把對方比成飛來橫禍，也許是命運，也許是謊言。你想靠近，也怕失控，想心動，也怕受傷。就像在夜裡看不清方向，不知道前方是情感救贖或甜蜜陷阱。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/5MOeJ3kTlC1a0B4T1i6FAT?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈SPAGHETTI〉LE SSERAFIM",
+      desc: "充滿趣味的 Funky 律動，歌詞用義大利麵比喻混亂卻美味的生活態度，充滿了 Z 世代的幽默與鬆弛感。如果你喜歡那種不按牌理出牌、帶點怪誕卻極具感染力的快樂，這首歌會讓你忍不住跟著擺動。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/2N9miXnewVmUrgl6JSK1FI?utm_source=generator",
     },
     {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-  ],
-  "1-1-2-0": [
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-  ],
-  "1-1-0-2": [
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-  ],
-  "2-0-1-1": [
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-  ],
-  "0-2-1-1": [
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-  ],
-  "0-1-2-1": [
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-  ],
-  "0-1-1-2": [
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-  ],
-  "2-1-0-1": [
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
-    },
-    {
-      title: "〈Bad Girls〉Nicolas Julian",
-      desc: "",
-      spotifyUrl: "",
+      title: "〈轉生成椅子在二手傢俱店等待邂逅的我是否搞錯了什麼〉冰球樂團",
+      desc: "充滿律動感的 Funk 吉他與荒誕幽默的歌詞，展現了極致的腦洞與浪漫。將視角轉生成一張椅子，用最卑微的姿勢等待愛情。如果你是一個擁有奇特幽默感、喜歡在日常無聊中尋找樂趣的人，這種「一本正經胡說八道」的浪漫律動會讓你會心一笑。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/5Cmv9VX8BjxKELcHG3uGx9?utm_source=generator",
     },
   ],
 };
