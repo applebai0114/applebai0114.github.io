@@ -233,7 +233,7 @@ p {
 
 /* 歌曲資訊區塊 */
 .song-info {
-  margin: 9.63vh 0 0 0; /* 104px -> 9.63vh */
+  margin: 9.63vh 20vw 0 20vw; /* 104px -> 9.63vh */
 }
 
 #result-song-title {
@@ -251,7 +251,7 @@ p {
   max-width: 36.46vw; /* 700px -> 36.46vw */
 
   /* 距離上方文字 169px，底部間距 252px (推開按鈕) */
-  margin: 15.65vh auto 23.33vh auto; /* 169px -> 15.65vh, 252px -> 23.33vh */
+  margin: 15vh auto 23.33vh auto; /* 169px -> 15.65vh, 252px -> 23.33vh */
 
   border-radius: 12px;
   overflow: hidden;
