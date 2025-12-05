@@ -173,6 +173,7 @@ h3 {
   color: var(--primary-purple);
   width: 20.83vw !important; /* 400px -> 20.83vw */
   height: 7.22vh; /* 78px -> 7.22vh */
+  font-weight: bold;
 }
 
 .btn-wide:hover {
