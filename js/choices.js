@@ -964,6 +964,58 @@ const RESULT_POOL = {
       desc: "輕盈的 DnB 節奏，這首歌強調了夢境般的沈浸感。歌詞模糊了現實與幻想的邊界，像是一場清",
     },
   ],
+  "1-0-1-2": [
+    {
+      title: "〈i don't use drugz〉iilliaa",
+      desc: "Glitchcore 破碎的數位音效與迷離的人聲，營造出一種與現實解離的迷幻狀態。你不需要化學物質來麻痺自己，因為某個人、某段關係本身就是你最強烈的致幻劑。歌詞中那種反覆的呢喃，就像是試圖說服自己清醒，卻早已在對方的存在裡徹底淪陷。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/02nN7NRO8xZYFPaNvD7QUw?utm_source=generator",
+    },
+    {
+      title: "〈Malibu Nights〉Lany",
+      desc: "你的選擇帶著一種被夜色輕輕包住的質地，情緒安靜、克制，像在海邊聽見遠處回聲。悲傷是柔的，沒有重量地往下沉，像被霧慢慢拉開的心事。其間又透著少量冷色的光，是極簡、清透、帶點新潮感的留白。整體氛圍像是一段慢慢散去的夜晚，優雅而寂靜，在沉落與放下之間找到微弱卻真實的亮度。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/2YVa3CKE3yAyqFhfOcEre0?utm_source=generator",
+    },
+    {
+      title: "〈你不會一輩子的愛上我〉TYSON YOSHI",
+      desc: "這首歌帶著強烈節奏感，像在逼著情緒往前推，但旋律裡卻藏著一層淡淡的無力與遺憾。外表看似灑脫、動感，內裡卻像有什麼放不下的重量。聽起來既想掙脫、又有些疲憊，像在人生的高速運轉中突然意識到自己的心還在原地。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/5FbxrTeMrO3zbLe3uLbYH7?utm_source=generator",
+    },
+    {
+      title: "〈重感情的廢物〉TRASH",
+      desc: "直白粗暴的歌名，卻藏著最深情的自我剖析。用自嘲的方式承認自己的脆弱與放不下。如果你也是那個總是「愛得太深、傷得最重」的人，這首歌會是你最好的情緒出口。",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/18skUiI0cqgeceCykNtK6r?utm_source=generator",
+    },
+  ],
+  "1-1-1-1": [
+    {
+      title: "〈Last Christmas〉Wham!",
+      desc: "你是一個很獨特的人，你不被風格定義。❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅恭喜你觸發彩蛋，聖誕快樂❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/2FRnf9qhLbvw8fu4IBXx78?utm_source=generator",
+    },
+    {
+      title: "〈All I Want for Christmas Is You〉Mariah Carey",
+      desc: "你是一個很獨特的人，你不被風格定義。❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅恭喜你觸發彩蛋，聖誕快樂❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0bYg9bo50gSsH3LtXe2SQn?utm_source=generator",
+    },
+    {
+      title: "〈Santa Tell Me〉Ariana Grande",
+      desc: "你是一個很獨特的人，你不被風格定義。❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅恭喜你觸發彩蛋，聖誕快樂❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/0lizgQ7Qw35od7CYaoMBZb?utm_source=generator",
+    },
+    {
+      title: "〈Mistletoe〉Justin Bieber",
+      desc: "你是一個很獨特的人，你不被風格定義。❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅恭喜你觸發彩蛋，聖誕快樂❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/7xapw9Oy21WpfEcib2ErSA?utm_source=generator",
+    },
+  ],
 };
 
 //抽其中一個結果的函式
