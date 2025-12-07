@@ -198,18 +198,32 @@ h3 {
 /* 7. 紀念頁 (7-0) 專屬區塊設定 */
 /* ========================================================= */
 
+#page_memory {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible;
+}
+.memory_layout {
+  width: min(1120px, 100% - 80px);
+  position: relative;
+  margin: 0 auto;
+  overflow: visible;
+}
+
 /* CD result */
 .final-cd-container {
-  width: 400px;
-  height: 400px;
+  position: relative;
+  margin-left: -370px;
+  flex: 0 0 auto;
   background: rgba(0, 0, 0, 0.05);
 }
 
 .cd-part {
-  width: 77.92vw; /* 1496px -> 77.92vw */
-  height: 77.96vh; /* 842px -> 77.96vh */
   position: relative;
-  margin: 0 auto;
+  width: 1300px;
+  height: auto;
+  position: relative;
   overflow: visible; /* 讓掛飾可以超出去 */
 }
 
@@ -221,6 +235,7 @@ h3 {
   height: 100%;
   object-fit: contain;
   pointer-events: none;
+  display: block;
 }
 
 /* 圖層順序 */
@@ -242,18 +257,52 @@ h3 {
   height: auto;
   display: block;
 }
+.right-container {
+  position: absolute;
+  top: 140px; /* 往下多少自己調，先試 120 / 140 / 160 */
+  right: 0; /* 靠 memory_layout 右邊 */
+  width: 360px; /* 你原本的右欄寬度 */
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.song-info {
+  margin-top: 0px;
+  line-height: 3.24vh; /* 35px -> 3.24vh */
+}
 
 /* 歌曲資訊區塊 (包括名稱和間距) */
 #memory-song-name {
-  color: var(--primary-yellow);
-  font-size: 28px;
+  color: #ffffff;
+  font-size: 20px;
   font-weight: bold;
-  margin: 80px 0 0 0;
 }
-#tag {
+.memory-song-info {
   color: var(--primary-yellow);
   font-size: 20px;
   font-weight: lighter;
+
   margin: 30px 0 250px 0;
   /* 使用巨大的 margin-bottom 推開按鈕 */
+}
+.recommendation-text {
+  margin-top: 20px;
+}
+.song-info {
+  margin-top: 40px;
+}
+
+.memory-logo-container {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.memory-logo-container .logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
