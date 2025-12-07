@@ -487,7 +487,7 @@ const RESULT_POOL = {
       title: "〈Poker Face〉Lupage, Joe Kox",
       desc: "將經典流行曲重塑為充滿攻擊性的 Phonk 風格，低沈的 Bassline 與快節奏賦予了它全新的暗黑能量。這是一種隱藏情緒的武裝，像是戴著面具在深夜的街頭疾行。若你偏好那種具有強烈壓迫感、適合夜間駕駛或高強度運動的節奏，這種冷酷的聽感會讓你感到格外過癮。",
       spotifyUrl:
-        "https://open.spotify.com/embed/track/1QV6tiMFM6fSOKOGLMHYYg?utm_source=generator",
+        "https://open.spotify.com/embed/track/6aFUMn7oUmcHKFnx1WPcJt?utm_source=generator",
     },
     {
       title: "〈ビターチョコデコレーション〉初音ミク、syudou",

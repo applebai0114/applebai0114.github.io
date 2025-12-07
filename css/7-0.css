@@ -214,14 +214,15 @@ h3 {
 /* CD result */
 .final-cd-container {
   position: relative;
-  margin-left: -370px;
+  margin-left: -350px;
+  margin-top: 60px;
   flex: 0 0 auto;
   background: rgba(0, 0, 0, 0.05);
 }
 
 .cd-part {
   position: relative;
-  width: 1300px;
+  width: 1200px;
   height: auto;
   position: relative;
   overflow: visible; /* 讓掛飾可以超出去 */
@@ -261,7 +262,8 @@ h3 {
   position: absolute;
   top: 140px; /* 往下多少自己調，先試 120 / 140 / 160 */
   right: 0; /* 靠 memory_layout 右邊 */
-  width: 360px; /* 你原本的右欄寬度 */
+  left: 700px;
+  width: 500px; /* 你原本的右欄寬度 */
   padding-right: 0;
   display: flex;
   flex-direction: column;
@@ -271,11 +273,14 @@ h3 {
   margin-top: 0px;
   line-height: 3.24vh; /* 35px -> 3.24vh */
 }
+#memory-song-desc {
+  margin-top: 20px;
+}
 
 /* 歌曲資訊區塊 (包括名稱和間距) */
 #memory-song-name {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 .memory-song-info {
@@ -290,7 +295,7 @@ h3 {
   margin-top: 20px;
 }
 .song-info {
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .memory-logo-container {
@@ -305,4 +310,7 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.spotify-embed {
+  margin-top: 20px;
 }
