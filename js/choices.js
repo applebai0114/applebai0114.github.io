@@ -1094,22 +1094,80 @@ function applyComboResultToResultPage() {
   localStorage.setItem("result_spotifyUrl", result.spotifyUrl);
 }
 
-// =============================
-// 6. 套用到「紀念頁 7-0」的歌名
-// =============================
-function applySongResultToMemoryPage() {
-  const nameEl = document.getElementById("memory-song-name");
-  if (!nameEl) {
-    // 不是紀念頁，就什麼都不做
+function applyComboResultToResultPage() {
+  // 只在 6-0 結果頁執行
+  const resultPage = document.getElementById("page-result");
+  if (!resultPage) return;
+
+  const titleEl = document.getElementById("result-song-title");
+  const descEl = document.getElementById("result-song-desc");
+  const iframeEl = document.getElementById("result-song-iframe");
+
+  if (!titleEl || !descEl || !iframeEl) return;
+
+  // 這次使用者的選擇 → 風格數量 & comboKey
+  const choices = getUserChoices();
+  const counts = getStyleCounts(choices); // { sweet: ?, hiphop: ?, ... }
+  const currentComboKey = buildComboKey(counts); // 例如 "4-0-0-0"
+
+  // 看看 localStorage 裡有沒有之前算過的結果
+  const savedComboKey = localStorage.getItem("result_comboKey");
+  const savedTitle = localStorage.getItem("result_songTitle");
+  const savedDesc = localStorage.getItem("result_songDesc");
+  const savedSpotifyUrl = localStorage.getItem("result_spotifyUrl");
+
+  // ✅ 如果「這次的 comboKey 跟之前一樣」而且之前有結果 → 沿用舊的，不重抽
+  if (savedComboKey === currentComboKey && savedTitle && savedSpotifyUrl) {
+    titleEl.textContent = savedTitle;
+    descEl.textContent = savedDesc || "";
+    iframeEl.src = savedSpotifyUrl;
     return;
   }
 
-  const savedTitle = localStorage.getItem("result_songTitle");
-  if (savedTitle) {
-    nameEl.textContent = savedTitle;
+  // ⬇️ 否則：第一次算、或這次選擇的風格數量跟上次不同 → 抽新的一首
+  const result = pickResultByCombo(counts);
+  if (!result) {
+    console.warn("pickResultByCombo 沒有回傳結果，comboKey =", currentComboKey);
+    return;
   }
+
+  // 顯示新的結果
+  titleEl.textContent = result.title || "";
+  descEl.textContent = result.desc || "";
+  iframeEl.src = result.spotifyUrl || "";
+
+  // 存進 localStorage，之後 6-0 / 7-0 都會用同一份
+  localStorage.setItem("result_comboKey", currentComboKey);
+  localStorage.setItem("result_songTitle", result.title || "");
+  localStorage.setItem("result_songDesc", result.desc || "");
+  localStorage.setItem("result_spotifyUrl", result.spotifyUrl || "");
 }
 
+function applySongResultToMemoryPage() {
+  // ✅ 只有 7-0 有這個 section
+  const memoryPage = document.getElementById("page-memory");
+  if (!memoryPage) return; // 不是紀念頁就離開
+
+  const savedTitle = localStorage.getItem("result_songTitle");
+  const savedDesc = localStorage.getItem("result_songDesc");
+  const savedSpotifyUrl = localStorage.getItem("result_spotifyUrl");
+
+  const nameEl = document.getElementById("memory-song-name");
+  const descEl = document.getElementById("memory-song-desc");
+  const iframeEl = document.getElementById("memory-song-iframe");
+
+  if (nameEl && savedTitle) {
+    nameEl.textContent = savedTitle;
+  }
+  if (descEl && savedDesc) {
+    descEl.textContent = savedDesc; // 先用純文字顯示，有需要再調換行
+  }
+  if (iframeEl && savedSpotifyUrl) {
+    iframeEl.src = savedSpotifyUrl;
+  }
+
+  // （如果之後你要紀念頁也顯示介紹文字，可以再多一個 memory-song-desc 去塞 savedDesc）
+}
 // =============================
 // 7. DOM 載入完之後，一次統一呼叫
 // =============================
