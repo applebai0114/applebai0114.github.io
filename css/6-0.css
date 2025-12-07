@@ -219,6 +219,20 @@ p {
   pointer-events: none;
 }
 
+/* 圖層順序 */
+#result-case-img {
+  z-index: 2;
+}
+#result-cover-img {
+  z-index: 1;
+}
+#result-sticker-img {
+  z-index: 3;
+}
+#result-keychain-img {
+  z-index: 4;
+}
+
 /* 推薦文字區塊 (We've got a song...) */
 .recommendation-text {
   margin: 14.26vh 0 0 0; /* 154px -> 14.26vh */

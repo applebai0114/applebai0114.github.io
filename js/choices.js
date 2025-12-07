@@ -71,7 +71,7 @@ function applyChoicesToResultPageImages() {
 
 // 4. 等 DOM 載入完成後自動執行
 document.addEventListener("DOMContentLoaded", function () {
-  applyChoicesToResultPageImages();
+  applyChoicesToAllPages();
 });
 
 // 這裡底下都是算歌曲的
