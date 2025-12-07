@@ -979,25 +979,25 @@ const RESULT_POOL = {
   "1-1-1-1": [
     {
       title: "〈Last Christmas〉Wham!",
-      desc: "你是一個很獨特的人，你不被風格定義。❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅恭喜你觸發彩蛋，聖誕快樂❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
+      desc: "你是一個很獨特的人，你不被風格定義。\n❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅\n恭喜你觸發彩蛋，聖誕快樂\n❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
       spotifyUrl:
         "https://open.spotify.com/embed/track/2FRnf9qhLbvw8fu4IBXx78?utm_source=generator",
     },
     {
       title: "〈All I Want for Christmas Is You〉Mariah Carey",
-      desc: "你是一個很獨特的人，你不被風格定義。❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅恭喜你觸發彩蛋，聖誕快樂❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
+      desc: "你是一個很獨特的人，你不被風格定義。\n❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅\n恭喜你觸發彩蛋，聖誕快樂\n❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
       spotifyUrl:
         "https://open.spotify.com/embed/track/0bYg9bo50gSsH3LtXe2SQn?utm_source=generator",
     },
     {
       title: "〈Santa Tell Me〉Ariana Grande",
-      desc: "你是一個很獨特的人，你不被風格定義。❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅恭喜你觸發彩蛋，聖誕快樂❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
+      desc: "你是一個很獨特的人，你不被風格定義。\n❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅\n恭喜你觸發彩蛋，聖誕快樂\n❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
       spotifyUrl:
         "https://open.spotify.com/embed/track/0lizgQ7Qw35od7CYaoMBZb?utm_source=generator",
     },
     {
       title: "〈Mistletoe〉Justin Bieber",
-      desc: "你是一個很獨特的人，你不被風格定義。❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅恭喜你觸發彩蛋，聖誕快樂❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
+      desc: "你是一個很獨特的人，你不被風格定義。\n❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅\n恭喜你觸發彩蛋，聖誕快樂\n❅*⋆⍋*⋆*❅*⋆*⍋⋆*❅",
       spotifyUrl:
         "https://open.spotify.com/embed/track/7xapw9Oy21WpfEcib2ErSA?utm_source=generator",
     },

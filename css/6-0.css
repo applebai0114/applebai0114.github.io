@@ -270,3 +270,6 @@ p {
   border-radius: 12px;
   overflow: hidden;
 }
+#result-song-desc {
+  white-space: pre-line;
+}
