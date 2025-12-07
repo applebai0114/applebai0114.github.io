@@ -203,11 +203,38 @@ h3 {
   width: 400px;
   height: 400px;
   background: rgba(0, 0, 0, 0.05);
-  border: 1px solid red;
 }
 
 .cd-part {
-  border: 1px dashed blue;
+  width: 77.92vw; /* 1496px -> 77.92vw */
+  height: 77.96vh; /* 842px -> 77.96vh */
+  position: relative;
+  margin: 0 auto;
+  overflow: visible; /* 讓掛飾可以超出去 */
+}
+
+/* 所有零件疊在裡面 */
+.cd-part img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* 圖層順序 */
+#result-case-img {
+  z-index: 2;
+}
+#result-cover-img {
+  z-index: 1;
+}
+#result-sticker-img {
+  z-index: 3;
+}
+#result-keychain-img {
+  z-index: 4;
 }
 
 .cd-part img {
