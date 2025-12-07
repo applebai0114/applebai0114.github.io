@@ -36,13 +36,9 @@ const IMAGE_MAP = {
 };
 
 // 3. 把使用者選擇套到 6-0 結果頁的四張圖上
-function applyChoicesToResultPageImages() {
-  const resultPage = document.getElementById("page-result");
-  if (!resultPage) return; // 不在結果頁就直接結束
-
+function applyChoicesToCDImages() {
   const choices = getUserChoices();
 
-  // 各部位對應到 HTML 裡的 img id
   const imgElements = {
     case: document.getElementById("result-case-img"),
     cover: document.getElementById("result-cover-img"),
@@ -50,32 +46,19 @@ function applyChoicesToResultPageImages() {
     sticker: document.getElementById("result-sticker-img"),
   };
 
-  // 依序套用圖片
   Object.keys(imgElements).forEach((part) => {
-    const style = choices[part]; // sweet / hiphop / y3k / dark
     const imgEl = imgElements[part];
+    const style = choices[part]; // sweet / hiphop / y3k / dark
 
-    if (!imgEl) return; // 這個 img 沒在頁面上，就跳過
+    if (!imgEl) return; // 這一頁沒有這張圖就跳過（例如有的頁面沒有 CD）
 
-    // 如果有選到這個部位的風格，而且在 IMAGE_MAP 裡有對應圖片，就換圖
     if (style && IMAGE_MAP[part] && IMAGE_MAP[part][style]) {
       imgEl.src = IMAGE_MAP[part][style];
     } else {
-      // 如果沒有選到或沒對應圖，就可以保留原本 placeholder
       console.warn(`找不到 ${part} 的圖片風格：`, style);
     }
   });
-
-  console.log("使用者的選擇：", choices);
 }
-
-// 4. 等 DOM 載入完成後自動執行
-document.addEventListener("DOMContentLoaded", function () {
-  applyChoicesToAllPages();
-});
-
-// 這裡底下都是算歌曲的
-
 // 計數
 function getStyleCounts(choices) {
   const counts = {
@@ -1075,4 +1058,70 @@ function applyComboResultToResultPage() {
 document.addEventListener("DOMContentLoaded", function () {
   applyChoicesToResultPageImages(); // 四格圖片
   applyComboResultToResultPage(); // 歌名 + 介紹 + iframe
+});
+
+function applyComboResultToResultPage() {
+  // 判斷現在是不是 6-0（有沒有這個元素）
+  const titleEl = document.getElementById("result-song-title");
+  const iframeEl = document.getElementById("result-song-iframe");
+
+  if (!titleEl || !iframeEl) {
+    // 代表這一頁不是結果頁，就不用做下面的事
+    return;
+  }
+
+  const choices = getUserChoices();
+  const counts = getStyleCounts(choices);
+  const result = pickResultByCombo(counts);
+  if (!result) return;
+
+  // 1. 換結果頁上的歌名
+  titleEl.textContent = result.title;
+
+  // 2. 換結果頁上的介紹
+  const descEl = document.getElementById("result-song-desc");
+  if (descEl) {
+    descEl.textContent = result.desc;
+  }
+
+  // 3. 改 Spotify iframe src
+  iframeEl.src = result.spotifyUrl;
+
+  // 4. ✅ 把結果存到 localStorage，給紀念頁用
+  localStorage.setItem("result_comboKey", buildComboKey(counts));
+  localStorage.setItem("result_songTitle", result.title);
+  localStorage.setItem("result_songDesc", result.desc);
+  localStorage.setItem("result_spotifyUrl", result.spotifyUrl);
+}
+
+// =============================
+// 6. 套用到「紀念頁 7-0」的歌名
+// =============================
+function applySongResultToMemoryPage() {
+  const nameEl = document.getElementById("memory-song-name");
+  if (!nameEl) {
+    // 不是紀念頁，就什麼都不做
+    return;
+  }
+
+  const savedTitle = localStorage.getItem("result_songTitle");
+  if (savedTitle) {
+    nameEl.textContent = savedTitle;
+  }
+}
+
+// =============================
+// 7. DOM 載入完之後，一次統一呼叫
+// =============================
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("choices.js DOM ready");
+
+  // 兩個頁面都要：CD 圖片疊起來
+  applyChoicesToCDImages();
+
+  // 只有 6-0 有 result-song-title / iframe，這裡才會真的做事
+  applyComboResultToResultPage();
+
+  // 只有 7-0 有 memory-song-name，這裡才會真的做事
+  applySongResultToMemoryPage();
 });
