@@ -177,7 +177,8 @@ const RESULT_POOL = {
     {
       title: "〈WICKED〉ALLDAY PROJECT",
       desc: "融合了 Brazilian Funk 的野性與 Trap 的重擊。歌詞充滿了「打破規則」的狂妄與自由，像是對平庸生活的宣戰。如果你喜歡那種能讓腎上腺素飆升、在混亂中釋放壓力的音樂，這首充滿攻擊性的舞曲會是你的最佳燃料。",
-      spotifyUrl: "",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/6uPnrBgweGOcwjFL4ItAvV?utm_source=generator",
     },
     {
       title: "〈Fashion〉CORTIS",
@@ -962,6 +963,8 @@ const RESULT_POOL = {
     {
       title: "〈Only In My Mind〉Kenya Grace",
       desc: "輕盈的 DnB 節奏，這首歌強調了夢境般的沈浸感。歌詞模糊了現實與幻想的邊界，像是一場清",
+      spotifyUrl:
+        "https://open.spotify.com/embed/track/593knnQN4REEshx8th9zgK?utm_source=generator",
     },
   ],
   "1-0-1-2": [
