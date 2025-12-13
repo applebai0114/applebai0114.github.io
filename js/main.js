@@ -11,7 +11,20 @@ function saveChoice(type, choiceIndex) {
   localStorage.setItem(`userChoice_${type}`, choiceValue);
   console.log(`已儲存 ${type}: ${choiceValue}`);
 }
+/** 播放成功音效並延遲跳轉 (用於 START 按鈕) */
+const DELAY_BEFORE_REDIRECT_MS = 600;
 
+function playStartSoundAndRedirect(targetUrl) {
+  const startSound = document.getElementById("startSound");
+  if (startSound) {
+    startSound.currentTime = 0;
+    startSound.play().catch(() => {});
+  }
+
+  setTimeout(function () {
+    window.location.href = targetUrl;
+  }, DELAY_BEFORE_REDIRECT_MS);
+}
 // =========================================================
 // 【輪播操作函式】
 // 這些函式必須是全域的，因為 HTML 中的 onclick 依賴它們。
@@ -151,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       //外殼頁 → 存成 case
       saveChoice("case", chosenIndex);
-      window.location.href = "3-0選擇封面.html";
+      playStartSoundAndRedirect("3-0選擇封面.html");
     });
   }
 
@@ -187,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       //封面頁 → 存成 cover
       saveChoice("cover", chosenIndex);
-      window.location.href = "4-0選擇鑰匙圈.html";
+      playStartSoundAndRedirect("4-0選擇鑰匙圈.html");
     });
   }
 
@@ -223,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // 鑰匙圈頁 → 存成 keychain
       saveChoice("keychain", chosenIndex);
-      window.location.href = "5-0選擇貼紙.html";
+      playStartSoundAndRedirect("5-0選擇貼紙.html");
     });
   }
 
@@ -259,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // 貼紙頁 → 存成 sticker
       saveChoice("sticker", chosenIndex);
-      window.location.href = "6-0結果頁.html";
+      playStartSoundAndRedirect("6-0結果頁.html");
     });
   }
 
