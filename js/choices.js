@@ -1053,47 +1053,10 @@ function applyComboResultToResultPage() {
   localStorage.setItem("result_songDesc", result.desc);
   localStorage.setItem("result_spotifyId", result.spotifyId);
 }
-//隨機結果
 
-document.addEventListener("DOMContentLoaded", function () {
-  applyChoicesToResultPageImages(); // 四格圖片
-  applyComboResultToResultPage(); // 歌名 + 介紹 + iframe
-});
-
-function applyComboResultToResultPage() {
-  // 判斷現在是不是 6-0（有沒有這個元素）
-  const titleEl = document.getElementById("result-song-title");
-  const iframeEl = document.getElementById("result-song-iframe");
-
-  if (!titleEl || !iframeEl) {
-    // 代表這一頁不是結果頁，就不用做下面的事
-    return;
-  }
-
-  const choices = getUserChoices();
-  const counts = getStyleCounts(choices);
-  const result = pickResultByCombo(counts);
-  if (!result) return;
-
-  // 1. 換結果頁上的歌名
-  titleEl.textContent = result.title;
-
-  // 2. 換結果頁上的介紹
-  const descEl = document.getElementById("result-song-desc");
-  if (descEl) {
-    descEl.textContent = result.desc;
-  }
-
-  // 3. 改 Spotify iframe src
-  iframeEl.src = result.spotifyUrl;
-
-  // 4. ✅ 把結果存到 localStorage，給紀念頁用
-  localStorage.setItem("result_comboKey", buildComboKey(counts));
-  localStorage.setItem("result_songTitle", result.title);
-  localStorage.setItem("result_songDesc", result.desc);
-  localStorage.setItem("result_spotifyUrl", result.spotifyUrl);
-}
-
+// =============================
+// 6-0 結果頁：抽歌 + 顯示 + 存 localStorage
+// =============================
 function applyComboResultToResultPage() {
   // 只在 6-0 結果頁執行
   const resultPage = document.getElementById("page-result");
@@ -1102,74 +1065,61 @@ function applyComboResultToResultPage() {
   const titleEl = document.getElementById("result-song-title");
   const descEl = document.getElementById("result-song-desc");
   const iframeEl = document.getElementById("result-song-iframe");
-
   if (!titleEl || !descEl || !iframeEl) return;
 
-  // 1. 讀使用者這一輪的選擇 → 算出風格數量
-  const choices = getUserChoices(); // { case, cover, keychain, sticker }
-  const counts = getStyleCounts(choices); // { sweet: ?, hiphop: ?, y3k: ?, dark: ? }
+  const choices = getUserChoices();
+  const counts = getStyleCounts(choices);
 
-  // 2. 從這個組合對應的 RESULT_POOL 裡，隨機抽一首
   const result = pickResultByCombo(counts);
   if (!result) {
     console.warn("pickResultByCombo 沒有回傳結果");
     return;
   }
 
-  // 3. 把這次抽到的結果顯示在 6-0
+  // 顯示在 6-0
   titleEl.textContent = result.title || "";
-  descEl.textContent = result.desc || ""; // 純文字先這樣，有需要再處理換行
+  descEl.textContent = result.desc || "";
   iframeEl.src = result.spotifyUrl || "";
 
-  // 4. 同時存進 localStorage，給 7-0 紀念頁用
-  const comboKey = buildComboKey(counts); // e.g. "4-0-0-0"
-  localStorage.setItem("result_comboKey", comboKey);
+  // 存到 localStorage，給 7-0 用（鎖住同一輪結果）
+  localStorage.setItem("result_comboKey", buildComboKey(counts));
   localStorage.setItem("result_songTitle", result.title || "");
   localStorage.setItem("result_songDesc", result.desc || "");
   localStorage.setItem("result_spotifyUrl", result.spotifyUrl || "");
 }
 
+// =============================
+// 7-0 紀念頁：讀 localStorage 顯示同一首
+// =============================
 function applySongResultToMemoryPage() {
-  // 只在 7-0 紀念頁執行
   const memoryPage = document.getElementById("page-memory");
   if (!memoryPage) return;
 
-  // 1. 把 6-0 存的結果讀出來
   const savedTitle = localStorage.getItem("result_songTitle");
   const savedDesc = localStorage.getItem("result_songDesc");
   const savedSpotifyUrl = localStorage.getItem("result_spotifyUrl");
 
-  // 2. 抓頁面上的元素
   const nameEl = document.getElementById("memory-song-name");
-  const descEl = document.getElementById("memory-song-desc"); // 如果有這個就塞
+  const descEl = document.getElementById("memory-song-desc"); // 有放才會塞
   const iframeEl = document.getElementById("memory-song-iframe");
 
-  // 3. 塞回去
-  if (nameEl && savedTitle) {
-    nameEl.textContent = savedTitle;
-  }
-
-  if (descEl && savedDesc) {
-    descEl.textContent = savedDesc;
-  }
-
-  if (iframeEl && savedSpotifyUrl) {
-    iframeEl.src = savedSpotifyUrl;
-  }
+  if (nameEl && savedTitle) nameEl.textContent = savedTitle;
+  if (descEl && savedDesc) descEl.textContent = savedDesc;
+  if (iframeEl && savedSpotifyUrl) iframeEl.src = savedSpotifyUrl;
 }
 
 // =============================
-// 7. DOM 載入完之後，一次統一呼叫
+// DOM 載入：統一呼叫
 // =============================
 document.addEventListener("DOMContentLoaded", function () {
   console.log("choices.js DOM ready");
 
-  // 兩個頁面都要：CD 圖片疊起來
+  // 兩頁都要：CD 圖片疊起來（⚠️這行要用你實際存在的函式名）
   applyChoicesToCDImages();
 
-  // 只有 6-0 有 result-song-title / iframe，這裡才會真的做事
+  // 6-0 才會做事
   applyComboResultToResultPage();
 
-  // 只有 7-0 有 memory-song-name，這裡才會真的做事
+  // 7-0 才會做事
   applySongResultToMemoryPage();
 });
