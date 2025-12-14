@@ -201,7 +201,7 @@ h3 {
 #page_memory {
   position: relative;
   width: 78.13vw; /* 1500px -> 78.13vw */
-  height: 64.81vh; /* 700px -> 64.81vh */
+  height: 70vh; /* 700px -> 64.81vh */
   overflow: visible;
 }
 
@@ -215,7 +215,7 @@ h3 {
 /* CD result */
 .final-cd-container {
   position: relative;
-  margin-left: -18.23vw; /* -350px -> -18.23vw */
+  margin-left: -22vw; /* -350px -> -18.23vw */
   margin-top: 5.56vh; /* 60px -> 5.56vh */
   flex: 0 0 auto;
   background: rgba(0, 0, 0, 0.05);
@@ -261,10 +261,10 @@ h3 {
 }
 .right-container {
   position: absolute;
-  top: 9.26vh; /* 100px -> 9.26vh */
+  top: 7.8vh; /* 100px -> 9.26vh */
   right: 0;
   left: 36.46vw; /* 700px -> 36.46vw */
-  width: 26.04vw; /* 500px -> 26.04vw */
+  width: 30vw; /* 500px -> 26.04vw */
   padding-right: 0;
   display: flex;
   flex-direction: column;

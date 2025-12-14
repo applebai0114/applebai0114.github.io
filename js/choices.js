@@ -95,7 +95,7 @@ const RESULT_POOL = {
   "4-0-0-0": [
     {
       title: "〈Midnight Fiction〉ILLIT",
-      desc: "夢境與現實的邊界逐漸變得模糊，這首充滿夢核（Dreamcore）美學的歌像是一場粉色的夜間漫遊。輕盈的節奏帶著童話般的失真感，彷彿世界只剩下你與你的幻想。你咬下一口沾滿糖霜的雲朵，探索並沈溺在旋律裡甜美的秘密，像是在做一場甜美又漫長的夢。",
+      desc: "夢境與現實的邊界逐漸變得模糊，這首充滿夢核（Dreamcore）美學的歌像是一場粉色的夜間漫遊。輕盈的節奏帶著童話般的失真感，彷彿世界只剩下你與你的幻想。你咬下一口沾滿糖霜的雲朵，沈溺在旋律裡甜美的秘密，像是在做一場甜美又漫長的夢。",
       spotifyUrl:
         "https://open.spotify.com/embed/track/6QqrxJe1iQxwLY6he6FLFo?utm_source=generator",
     },
