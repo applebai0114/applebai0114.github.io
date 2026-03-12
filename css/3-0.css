@@ -513,9 +513,9 @@ p {
   }
   /* 箭頭按鈕 */
   .arrow-btn {
-    width: 10vw;
+    width: 8vw;
     height: 5vh;
-    font-size: 4vw;
+    font-size: 3.8vw;
   }
 
   .arrow-btn.prev {
