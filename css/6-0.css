@@ -273,3 +273,96 @@ p {
 #result-song-desc {
   white-space: pre-line;
 }
+/* ========================================================= */
+/* 手機版響應式設定 (375px × 667px) - 結果頁 */
+/* ========================================================= */
+@media screen and (max-width: 375px) and (max-height: 667px) {
+  .logo-container {
+    top: 5vh;
+    left: 5vw;
+  }
+  .logo {
+    width: 15vw;
+    height: auto;
+  }
+  /* 標題縮小並往下移 */
+  .result-header {
+    margin: 5vh 0 0 0;
+  }
+  h1 {
+    font-size: 6vw;
+  }
+  h2 {
+    font-size: 5vw;
+    margin-bottom: 2vh;
+  }
+  h3 {
+    font-size: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  p {
+    font-size: 2.8vw;
+    line-height: 1.4;
+  }
+
+  /* 按鈕 */
+  .btn {
+    width: 40vw; /* 按鈕寬度改為螢幕一半 */
+    height: 6vh;
+    font-size: 4vw;
+    bottom: 3vh; /* 距離底部縮小 */
+  }
+
+  .btn-primary:active {
+    width: 30vw;
+    height: 5vh;
+    font-size: 3vw;
+    transform: translateX(-50%); /* 保持置中位移 */
+  }
+
+  /* CD 圖片縮小 */
+  .cd-part {
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+  }
+  .cd-part img {
+    width: 100%;
+    height: auto;
+  }
+  .result-header {
+    margin: 1vh 0 0 0;
+  }
+  /* 推薦文字縮小 */
+  .recommendation-text {
+    margin: 35vh 0 0 0;
+    font-size: 2.8vw;
+  }
+  #recommendation-text-zh {
+    margin: 1vh 0 0 0;
+    font-size: 2.8vw;
+  }
+
+  /* 歌曲資訊區塊 */
+  .song-info {
+    margin: 5vh 15vw 0 15vw;
+    width: 90vw;
+  }
+  #result-song-title {
+    font-size: 3.5vw;
+  }
+  #result-song-desc {
+    line-height: 3vh;
+    font-size: 2.8vw;
+    margin: 0 2vw 0 2vw;
+  }
+
+  /* Spotify 內嵌縮小 */
+  .spotify-embed {
+    width: 90%;
+    height: auto;
+    max-width: none;
+    margin: 5vh auto 10vh auto;
+  }
+}
