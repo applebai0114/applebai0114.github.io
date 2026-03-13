@@ -420,109 +420,55 @@ p {
   color: var(--primary-yellow);
   transform: translateY(-50%) scale(1.1);
 }
+
+/* 手機 */
 /* 手機尺寸 (375px × 667px) */
-@media screen and (max-width: 375px) and (max-height: 667px) {
-  /* Logo */
-  .logo-container {
-    top: 5vh;
-    left: 5vw;
-  }
-
-  .logo {
-    width: 15vw;
-    height: auto;
-  }
-
-  /* 標題字體縮小 */
-  h1 {
-    font-size: 6vw;
-  }
-  h2 {
-    font-size: 5vw;
-    margin-bottom: 2vh;
-  }
-  h3 {
-    font-size: 4vw;
-    margin-bottom: 1vh;
-  }
-  p {
-    font-size: 3.5vw;
-    line-height: 1.4;
-  }
-
-  /* 按鈕 */
-  .btn {
-    width: 60vw;
-    height: 6vh;
-    font-size: 4vw;
-    bottom: 3vh;
-  }
-
-  .btn-secondary {
-    width: 40vw;
-    height: 6vh;
-    font-size: 4vw;
-  }
-  .btn-secondary:active {
-    width: 30vw;
-    height: 5vh;
-    font-size: 3vw;
-    transform: translateX(-50%); /* 保持置中位移 */
-  }
-
-  .warning-text {
-    font-size: 3.5vw;
-    bottom: 15vh;
-  }
-
-  /* 進度條縮小 */
-  .progress-bar-container {
-    margin: 6.5vh 0 0 0; /* 往上間距縮小 */
-  }
-  .progress-bar-container img {
-    width: 20vw; /* 改成螢幕寬度的 30% */
-    height: auto; /* 自動高度 */
-  }
-  .selection-title {
-    margin: 18vh 0 0 0; /* 40px -> 3.70vh */
-  }
-  /* 輪播容器位置往下 */
-  .carousel-container {
-    margin: 2vh 0 0 0; /* 往下移，避免太靠上 */
-  }
-
-  /* 輪播整體縮小 */
+@media (max-width: 768px) {
   .carousel-3d-wrapper {
-    width: 80vw; /* 改成螢幕寬度的 80% */
-    height: 25vh; /* 高度縮小 */
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    padding: 0 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
-
-  /* 單個項目縮小 */
   .carousel-item {
-    width: 25vw; /* 改成螢幕寬度的 40% */
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none !important;
+    opacity: 1 !important;
+    z-index: 1 !important;
+    flex: 0 0 70%;
+    width: 70%;
+    scroll-snap-align: center;
   }
-
-  /* 圓點指示器縮小並往下 */
-  .pagination-dots {
-    gap: 2vw;
-    margin: 10vh 0 0 0; /* 往下移 */
+  .carousel-item {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none !important;
+    opacity: 1 !important;
+    z-index: 1 !important;
+    flex: 0 0 70%;
+    width: 70%;
+    scroll-snap-align: center;
   }
-  .dot {
-    width: 2.5vw;
-    height: 2.5vw;
-  }
-  /* 箭頭按鈕 */
   .arrow-btn {
-    width: 8vw;
-    height: 5vh;
-    font-size: 4vw;
+    display: none;
+  }
+  .pagination-dots {
+    margin-top: 24px;
+    gap: 8px;
   }
 
-  .arrow-btn.prev {
-    left: 5%;
-  }
-
-  .arrow-btn.next {
-    right: 5%;
+  .dot {
+    width: 10px;
+    height: 10px;
   }
 }
