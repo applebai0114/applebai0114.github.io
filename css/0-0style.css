@@ -256,26 +256,26 @@ h3 {
   }
 
   .cover_text {
-    font-size: 10vw; /* 大字縮小 */
-    margin-top: 43vh; /* 調整位置 */
+    font-size: 17vw; /* 大字縮小 */
+    margin-top: 25vh; /* 調整位置 */
   }
 
   .cover_text_two {
-    font-size: 14vw;
+    font-size: 25vw;
     margin-top: 2vh;
   }
 
   .btn {
-    width: 40vw; /* 按鈕寬度改為螢幕一半 */
-    height: 6vh;
-    font-size: 4vw;
-    bottom: 3vh; /* 距離底部縮小 */
+    width: 32vw; /* 按鈕寬度改為螢幕一半 */
+    height: 7.5vh;
+    font-size: 4.8vw;
+    bottom: 5vh; /* 距離底部縮小 */
   }
 
   .btn-primary:active {
     width: 30vw;
-    height: 5vh;
-    font-size: 3vw;
+    height: 5.5vh;
+    font-size: 4vw;
     transform: translateX(-50%); /* 保持置中位移 */
   }
 
@@ -285,9 +285,9 @@ h3 {
   }
 
   .logo_animation img {
-    width: 15vw; /* 縮小 Logo */
+    width: 21.3vw; /* 縮小 Logo */
     height: auto;
-    margin: 2vh 0 0 4vw;
+    margin: 5vh 0 0 4.26vw;
   }
 
   .Decorative_text_top {
@@ -295,26 +295,26 @@ h3 {
     display: flex;
     justify-content: space-between; /* 保持橫向分散 */
     align-items: flex-start;
-    font-size: 2vw; /* 字體縮小 */
-    margin: 2vh 4vw 0 4vw;
+    font-size: 1.56vw; /* 字體縮小 */
+    margin: 5vh 4.26vw 0 4vw;
   }
 
   /* 底部 Decorative_down */
   .Decorative_down {
-    margin: 0 4vw 2vh 4vw;
+    margin: 0 4.26vw 5vh 4.26vw;
     display: flex;
     justify-content: space-between; /* 左右分散 */
     align-items: center;
-    font-size: 2vw;
+    font-size: 2.13vw;
   }
 
   .down_left_text,
   .down_right_text {
-    font-size: 2vw;
+    font-size: 2.13vw;
     line-height: 2.5vh;
   }
   .center-floating-video {
-    width: 90vw; /* 影片縮小至螢幕寬度的 90% */
+    width: 100vw; /* 影片縮小至螢幕寬度的 90% */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
