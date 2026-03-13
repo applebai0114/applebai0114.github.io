@@ -274,7 +274,7 @@ h3 {
 
   .btn-primary:active {
     width: 30vw;
-    height: 5.5vh;
+    height: 7vh;
     font-size: 4vw;
     transform: translateX(-50%); /* 保持置中位移 */
   }

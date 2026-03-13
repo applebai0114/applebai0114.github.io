@@ -210,13 +210,13 @@ h3 {
 @media (max-width: 768px) {
   /* Logo */
   .logo-container {
-    top: 55vh; /* 往上移一點，避免佔太多空間 */
+    top: 51.12vh; /* 往上移一點，避免佔太多空間 */
     left: 50%;
     transform: translateX(-50%);
   }
 
   .logo {
-    width: 50vw; /* Logo 縮小到螢幕寬度的一半 */
+    width: 56.26vw; /* Logo 縮小到螢幕寬度的一半 */
     height: auto;
   }
 
@@ -226,7 +226,7 @@ h3 {
   }
 
   h2 {
-    font-size: 5vw;
+    font-size: 6.4vw;
     margin-bottom: 2vh;
   }
 
@@ -242,30 +242,30 @@ h3 {
     width: 60vw; /* 按鈕寬度改為螢幕 60% */
     height: 6vh;
     font-size: 4vw;
-    bottom: 3vh; /* 距離底部縮小 */
+    bottom: 6.6vh; /* 距離底部縮小 */
   }
 
   .btn-wide {
-    width: 80vw !important; /* 長按鈕改為螢幕 80% */
-    height: 6vh;
-    font-size: 4vw;
+    width: 65.06vw !important; /* 長按鈕改為螢幕 80% */
+    height: 7.5vh;
+    font-size: 4.8vw;
   }
   .btn-wide:active {
-    width: 70vw !important; /* 355px -> 18.50vw */
-    height: 5vh; /* 72px -> 6.67vh */
-    font-size: 3vw; /* 24px -> 1.25vw */
+    width: 63.06vw !important; /* 355px -> 18.50vw */
+    height: 7vh; /* 72px -> 6.67vh */
+    font-size: 4vw; /* 24px -> 1.25vw */
     /* 保持按鈕在點擊時不水平移動 */
   }
   /* 介紹內容區塊 */
   .intro-content {
     max-width: 90vw; /* 內容寬度放大到螢幕 90% */
-    margin: 12vh 2vw 0 2vw; /* 上方留白縮小 */
-    padding: 0 5vw;
+    margin: 14.85vh 2vw 0 2vw; /* 上方留白縮小 */
+    padding: 0 9.8vw;
   }
 
   .text-block-middle {
-    font-size: 3.5vw; /* 文字縮小 */
-    line-height: 3.5vh;
-    margin: 8vh 0 0 0;
+    font-size: 2.66vw; /* 文字縮小 */
+    line-height: 3vh;
+    margin: 4.35vh 0 0 0;
   }
 }
