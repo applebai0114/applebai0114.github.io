@@ -207,7 +207,7 @@ h3 {
   margin: 4.63vh 0px 0px 0px; /* 將內文推離上方標題 50px */
 }
 /* 手機尺寸 (375px × 667px) */
-@media screen and (max-width: 375px) and (max-height: 667px) {
+@media (max-width: 768px) {
   /* Logo */
   .logo-container {
     top: 55vh; /* 往上移一點，避免佔太多空間 */
