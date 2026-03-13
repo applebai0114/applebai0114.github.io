@@ -26,114 +26,171 @@ function playStartSoundAndRedirect(targetUrl) {
   }, DELAY_BEFORE_REDIRECT_MS);
 }
 // =========================================================
-// 【輪播操作函式】
-// 這些函式必須是全域的，因為 HTML 中的 onclick 依賴它們。
+// 【更新輪播畫面】
+// 中間那張 = 使用者目前選到的選項
 // =========================================================
+function updateCarousel(index) {
+  const wrapper = document.querySelector(".carousel-3d-wrapper");
+  if (!wrapper) return;
 
-/**
- * 根據方向切換輪播項目 (左右箭頭)。
- * @param {number} direction - 1 (下一張) 或 -1 (上一張)
- */
-window.changeOption = function (direction) {
-  // 獲取當前頁面 ID (例如 "page-select-case")
-  const activePage = document.querySelector(".page.active");
-  if (!activePage) return;
+  const items = wrapper.querySelectorAll(".carousel-item");
+  const dots = document.querySelectorAll(".dot");
+  const total = items.length;
 
-  const count = STYLES.length;
+  if (!total) return;
 
-  // 更新索引 (循環邏輯)
-  currentOptionIndex = (currentOptionIndex + direction + count) % count;
+  // 讓索引循環
+  currentOptionIndex = (index + total) % total;
 
-  updateCarouselState(activePage.id);
-};
+  // 先清掉所有 radio
+  items.forEach((item) => {
+    const input = item.querySelector('input[type="radio"]');
+    if (input) input.checked = false;
+  });
 
-/**
- * 跳轉到特定的輪播索引 (圓點指示器)。
- * @param {number} index - 目標索引 (0-3)
- */
-window.jumpToOption = function (index) {
-  const activePage = document.querySelector(".page.active");
-  if (!activePage) return;
+  // 更新每一張卡片的位置
+  items.forEach((item, i) => {
+    item.classList.remove("pos-center", "pos-left", "pos-right", "pos-hidden");
 
-  currentOptionIndex = index;
-  updateCarouselState(activePage.id);
-};
+    const input = item.querySelector('input[type="radio"]');
 
-/**
- * 更新轉盤狀態：根據 currentOptionIndex 套用 CSS class。
- * @param {string} pageId - 當前頁面的 ID (e.g., "page-select-case")
- */
-function updateCarouselState(pageId) {
-  const activePage = document.getElementById(pageId);
-  if (!activePage) return;
-
-  const items = activePage.querySelectorAll(".carousel-item");
-  const dots = activePage.querySelectorAll(".dot");
-  const radios = activePage.querySelectorAll(
-    ".carousel-item input[type='radio']",
-  ); // 或 ".carousel-radio"
-  const count = STYLES.length;
-
-  // 1. 更新圖片位置 (CSS class)
-  items.forEach((item, index) => {
-    item.className = "carousel-item";
-
-    let diff = (index - currentOptionIndex + count) % count;
-
-    if (diff === 0) {
+    if (i === currentOptionIndex) {
       item.classList.add("pos-center");
-
-      // 手機滑動到中間時，自動選取這張對應的 radio
-      const radio = item.querySelector("input[type='radio']");
-      if (radio) {
-        radio.checked = true;
-      }
-    } else if (diff === 1) {
-      item.classList.add("pos-right");
-    } else if (diff === 2) {
-      item.classList.add("pos-hidden");
-    } else if (diff === 3) {
+      if (input) input.checked = true;
+    } else if (i === (currentOptionIndex - 1 + total) % total) {
       item.classList.add("pos-left");
+    } else if (i === (currentOptionIndex + 1) % total) {
+      item.classList.add("pos-right");
+    } else {
+      item.classList.add("pos-hidden");
     }
   });
 
-  // 先清空，再由中間那張重新勾選
-  radios.forEach((radio) => {
-    radio.checked = false;
-  });
-
-  items.forEach((item, index) => {
-    let diff = (index - currentOptionIndex + count) % count;
-    if (diff === 0) {
-      const radio = item.querySelector("input[type='radio']");
-      if (radio) {
-        radio.checked = true;
-      }
-    }
+  // 更新圓點狀態
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === currentOptionIndex);
   });
 }
 
 // =========================================================
-// 【初始化與頁面跳轉 (DOMContentLoaded)】
+// 【提供給 HTML onclick 使用的全域函式】
+// =========================================================
+window.changeOption = function (direction) {
+  updateCarousel(currentOptionIndex + direction);
+};
+
+window.jumpToOption = function (index) {
+  updateCarousel(index);
+};
+
+// =========================================================
+// 【頁面載入後初始化所有事件】
 // =========================================================
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("我是阿呆");
+  console.log("輪播初始化成功");
 
-  // --- 1. 確保當前頁面內容顯示 ---
   const currentPage = document.querySelector(".page");
   if (currentPage) {
-    // 在多頁應用中，確保頁面載入時內容是可見的
     currentPage.classList.add("active");
-
-    // --- 2. 輪播頁面初始化 ---
-    // 只有當頁面包含輪播容器時才執行初始化
-    if (currentPage.querySelector(".carousel-3d-wrapper")) {
-      // 載入時執行一次，顯示第一張圖
-      updateCarouselState(currentPage.id);
-    }
   }
-  // --- 4. 所有的按鈕事件處理 (MPA 邏輯) ---
 
+  const wrapper = document.querySelector(".carousel-3d-wrapper");
+  if (!wrapper) return;
+
+  const items = wrapper.querySelectorAll(".carousel-item");
+  const prevBtn = document.querySelector(".arrow-btn.prev");
+  const nextBtn = document.querySelector(".arrow-btn.next");
+  const dots = document.querySelectorAll(".dot");
+
+  // ==============================
+  // 1. 桌機左右按鈕
+  // ==============================
+
+  // ==============================
+  // 2. 點圓點切換
+  // ==============================
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      updateCarousel(index);
+    });
+  });
+
+  // ==============================
+  // 3. 點圖片切換
+  // 中間圖：只保留選取
+  // 左右圖：切到中間
+  // ==============================
+  items.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      if (index === currentOptionIndex) {
+        const input = item.querySelector('input[type="radio"]');
+        if (input) input.checked = true;
+      } else {
+        updateCarousel(index);
+      }
+    });
+  });
+
+  // ==============================
+  // 4. 手機滑動
+  // ==============================
+  let startX = 0;
+  let startY = 0;
+  let endX = 0;
+  let isDragging = false;
+  const swipeThreshold = 40;
+
+  wrapper.addEventListener(
+    "touchstart",
+    (e) => {
+      const touch = e.touches[0];
+      startX = touch.clientX;
+      startY = touch.clientY;
+      endX = startX;
+      isDragging = true;
+    },
+    { passive: true },
+  );
+
+  wrapper.addEventListener(
+    "touchmove",
+    (e) => {
+      if (!isDragging) return;
+
+      const touch = e.touches[0];
+      endX = touch.clientX;
+
+      const deltaX = Math.abs(touch.clientX - startX);
+      const deltaY = Math.abs(touch.clientY - startY);
+
+      // 水平滑動比較明顯時，避免整頁跟著上下亂捲
+      if (deltaX > deltaY) {
+        e.preventDefault();
+      }
+    },
+    { passive: false },
+  );
+
+  wrapper.addEventListener("touchend", () => {
+    if (!isDragging) return;
+
+    const diffX = endX - startX;
+
+    if (Math.abs(diffX) > swipeThreshold) {
+      if (diffX < 0) {
+        updateCarousel(currentOptionIndex + 1);
+      } else {
+        updateCarousel(currentOptionIndex - 1);
+      }
+    }
+
+    isDragging = false;
+  });
+
+  // ==============================
+  // 5. 初始化第一張
+  // ==============================
+  updateCarousel(0);
   // 0.0 首頁（START!按鈕）
   const start_btn = document.getElementById("start_btn");
   if (start_btn) {
@@ -157,13 +214,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (next_btn_first) {
     next_btn_first.addEventListener("click", function () {
-      // 1. 檢查有沒有選到任一個 radio
-      const checkedRadio = document.querySelector(
-        ".carousel-item input[type='radio']:checked",
-      );
+      // 抓目前在中間的那張圖
+      const selectedItem = document.querySelector(".carousel-item.pos-center");
 
-      if (!checkedRadio) {
-        // 沒有選 → 顯示小提醒 2 秒
+      console.log("selectedItem:", selectedItem);
+
+      // 沒抓到中間圖就顯示提醒
+      if (!selectedItem) {
         if (warningcase) {
           warningcase.classList.add("show");
           clearTimeout(warningcaseTimer);
@@ -171,21 +228,33 @@ document.addEventListener("DOMContentLoaded", function () {
             warningcase.classList.remove("show");
           }, 2000);
         }
-        return; // 直接擋掉，不跳頁
+        return;
       }
 
-      //有選
-      const radios = document.querySelectorAll(
-        ".carousel-item input[type='radio']",
-      );
-      const chosenIndex = Array.from(radios).indexOf(checkedRadio);
+      // 抓所有 carousel item
+      const items = document.querySelectorAll(".carousel-item");
+      const chosenIndex = Array.from(items).indexOf(selectedItem);
 
-      //外殼頁 → 存成 case
+      console.log("chosenIndex:", chosenIndex);
+
+      // 如果 selectedItem 不在 items 裡，也直接停止
+      if (chosenIndex === -1) {
+        console.log("找不到 chosenIndex");
+        return;
+      }
+
+      // 同步勾選中間那張的 radio
+      const selectedRadio = selectedItem.querySelector("input[type='radio']");
+      if (selectedRadio) {
+        selectedRadio.checked = true;
+        console.log("selected value:", selectedRadio.value);
+      }
+
+      // 儲存選擇
       saveChoice("case", chosenIndex);
       playStartSoundAndRedirect("3-0選擇封面.html");
     });
   }
-
   // 3-0 選擇封面 (NEXT 按鈕)
   const next_btn_secondary = document.getElementById("next_btn_secondary");
   const warningcover = document.getElementById("cover-warning");
