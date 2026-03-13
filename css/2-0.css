@@ -333,28 +333,11 @@ p {
   opacity: 0;
 }
 
-.carousel-item.pos-center:hover label {
-  animation: opacityPulse 1.4s ease-in-out infinite;
-  cursor: pointer;
-}
-@keyframes opacityPulse {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.5;
-  }
-}
-
 .carousel-item.pos-center label {
   animation: pulse 1.4s ease-in-out infinite;
   top: 50%;
   z-index: 15;
   opacity: 1;
-  cursor: pointer;
 }
 @keyframes pulse {
   0% {
@@ -372,19 +355,6 @@ p {
 }
 .carousel-item input {
   opacity: 0;
-}
-.carousel-item.pos-center input:active + label {
-  animation: none !important;
-  transform: scale(0.9);
-  z-index: 10;
-  opacity: 0.5;
-}
-
-.carousel-item.pos-center input:checked + label {
-  animation: none !important;
-  transform: scale(1);
-  z-index: 10;
-  opacity: 1;
 }
 /* 箭頭按鈕 */
 
@@ -424,40 +394,61 @@ p {
 /* 手機 */
 /* 手機尺寸 (375px × 667px) */
 @media (max-width: 768px) {
+  /* 輪播容器位置往下 */
+  .carousel-container {
+    margin: 2vh 0 0 0; /* 往下移，避免太靠上 */
+  }
+
+  /* 輪播整體縮小 */
   .carousel-3d-wrapper {
-    position: static;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 16px;
-    padding: 0 16px;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    width: 80vw; /* 改成螢幕寬度的 80% */
+    height: 25vh; /* 高度縮小 */
   }
+
+  /* 單個項目縮小 */
   .carousel-item {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none !important;
-    opacity: 1 !important;
-    z-index: 1 !important;
-    flex: 0 0 70%;
-    width: 70%;
-    scroll-snap-align: center;
+    width: 25vw; /* 改成螢幕寬度的 40% */
   }
-  .carousel-item {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none !important;
-    opacity: 1 !important;
-    z-index: 1 !important;
-    flex: 0 0 70%;
-    width: 70%;
-    scroll-snap-align: center;
+
+  .carousel-item.pos-center {
+    transform: translate(-50%, -50%) scale(1.65);
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .carousel-item.pos-left {
+    transform: translate(-195%, -50%) scale(0.78);
+    opacity: 0.45;
+    z-index: 5;
+  }
+
+  .carousel-item.pos-right {
+    transform: translate(95%, -50%) scale(0.78);
+    opacity: 0.45;
+    z-index: 5;
+  }
+
+  .carousel-item.pos-hidden {
+    transform: translate(-50%, -50%) scale(0.55);
+    opacity: 0;
+    z-index: -1;
+  }
+  @keyframes centerPulse {
+    0% {
+      transform: translate(-50%, -50%) scale(2);
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(2.1);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) scale(2);
+    }
+  }
+
+  .carousel-item.pos-center {
+    animation: centerPulse 1.6s ease-in-out infinite;
   }
   .arrow-btn {
     display: none;
@@ -534,21 +525,6 @@ p {
   }
   .selection-title {
     margin: 18vh 0 0 0; /* 40px -> 3.70vh */
-  }
-  /* 輪播容器位置往下 */
-  .carousel-container {
-    margin: 2vh 0 0 0; /* 往下移，避免太靠上 */
-  }
-
-  /* 輪播整體縮小 */
-  .carousel-3d-wrapper {
-    width: 80vw; /* 改成螢幕寬度的 80% */
-    height: 25vh; /* 高度縮小 */
-  }
-
-  /* 單個項目縮小 */
-  .carousel-item {
-    width: 25vw; /* 改成螢幕寬度的 40% */
   }
 
   /* 圓點指示器縮小並往下 */
