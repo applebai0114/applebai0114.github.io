@@ -70,28 +70,46 @@ function updateCarouselState(pageId) {
   const items = activePage.querySelectorAll(".carousel-item");
   const dots = activePage.querySelectorAll(".dot");
   const radios = activePage.querySelectorAll(
-    ".carousel-item input[type='radio']"
+    ".carousel-item input[type='radio']",
   ); // 或 ".carousel-radio"
   const count = STYLES.length;
 
   // 1. 更新圖片位置 (CSS class)
   items.forEach((item, index) => {
-    item.className = "carousel-item"; // 重置所有 class
+    item.className = "carousel-item";
 
     let diff = (index - currentOptionIndex + count) % count;
 
-    if (diff === 0) item.classList.add("pos-center");
-    else if (diff === 1) item.classList.add("pos-right");
-    else if (diff === 2) item.classList.add("pos-hidden");
-    else if (diff === 3) item.classList.add("pos-left");
+    if (diff === 0) {
+      item.classList.add("pos-center");
+
+      // 手機滑動到中間時，自動選取這張對應的 radio
+      const radio = item.querySelector("input[type='radio']");
+      if (radio) {
+        radio.checked = true;
+      }
+    } else if (diff === 1) {
+      item.classList.add("pos-right");
+    } else if (diff === 2) {
+      item.classList.add("pos-hidden");
+    } else if (diff === 3) {
+      item.classList.add("pos-left");
+    }
   });
+
+  // 先清空，再由中間那張重新勾選
   radios.forEach((radio) => {
     radio.checked = false;
   });
 
-  // 2. 更新圓點 Active 狀態
-  dots.forEach((dot, index) => {
-    dot.classList.toggle("active", index === currentOptionIndex);
+  items.forEach((item, index) => {
+    let diff = (index - currentOptionIndex + count) % count;
+    if (diff === 0) {
+      const radio = item.querySelector("input[type='radio']");
+      if (radio) {
+        radio.checked = true;
+      }
+    }
   });
 }
 
@@ -141,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
     next_btn_first.addEventListener("click", function () {
       // 1. 檢查有沒有選到任一個 radio
       const checkedRadio = document.querySelector(
-        ".carousel-item input[type='radio']:checked"
+        ".carousel-item input[type='radio']:checked",
       );
 
       if (!checkedRadio) {
@@ -158,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       //有選
       const radios = document.querySelectorAll(
-        ".carousel-item input[type='radio']"
+        ".carousel-item input[type='radio']",
       );
       const chosenIndex = Array.from(radios).indexOf(checkedRadio);
 
@@ -177,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
     next_btn_secondary.addEventListener("click", function () {
       // 1. 檢查有沒有選到任一個 radio
       const checkedRadio = document.querySelector(
-        ".carousel-item input[type='radio']:checked"
+        ".carousel-item input[type='radio']:checked",
       );
 
       if (!checkedRadio) {
@@ -194,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       //有選
       const radios = document.querySelectorAll(
-        ".carousel-item input[type='radio']"
+        ".carousel-item input[type='radio']",
       );
       const chosenIndex = Array.from(radios).indexOf(checkedRadio);
 
@@ -213,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
     next_btn_third.addEventListener("click", function () {
       // 1. 檢查有沒有選到任一個 radio
       const checkedRadio = document.querySelector(
-        ".carousel-item input[type='radio']:checked"
+        ".carousel-item input[type='radio']:checked",
       );
 
       if (!checkedRadio) {
@@ -230,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       //有選
       const radios = document.querySelectorAll(
-        ".carousel-item input[type='radio']"
+        ".carousel-item input[type='radio']",
       );
       const chosenIndex = Array.from(radios).indexOf(checkedRadio);
 
@@ -249,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function () {
     next_btn_forth.addEventListener("click", function () {
       // 1. 檢查有沒有選到任一個 radio
       const checkedRadio = document.querySelector(
-        ".carousel-item input[type='radio']:checked"
+        ".carousel-item input[type='radio']:checked",
       );
 
       if (!checkedRadio) {
@@ -266,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       //有選
       const radios = document.querySelectorAll(
-        ".carousel-item input[type='radio']"
+        ".carousel-item input[type='radio']",
       );
       const chosenIndex = Array.from(radios).indexOf(checkedRadio);
 
