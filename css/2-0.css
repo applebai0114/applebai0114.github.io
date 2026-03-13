@@ -471,4 +471,89 @@ p {
     width: 10px;
     height: 10px;
   }
+  /* Logo */
+  .logo-container {
+    top: 5vh;
+    left: 5vw;
+  }
+
+  .logo {
+    width: 15vw;
+    height: auto;
+  }
+
+  /* 標題字體縮小 */
+  h1 {
+    font-size: 6vw;
+  }
+  h2 {
+    font-size: 5vw;
+    margin-bottom: 2vh;
+  }
+  h3 {
+    font-size: 4vw;
+    margin-bottom: 1vh;
+  }
+  p {
+    font-size: 3.5vw;
+    line-height: 1.4;
+  }
+
+  /* 按鈕 */
+  .btn {
+    width: 60vw;
+    height: 6vh;
+    font-size: 4vw;
+    bottom: 3vh;
+  }
+
+  .btn-secondary {
+    width: 40vw;
+    height: 6vh;
+    font-size: 4vw;
+  }
+  .btn-secondary:active {
+    width: 30vw;
+    height: 5vh;
+    font-size: 3vw;
+    transform: translateX(-50%); /* 保持置中位移 */
+  }
+
+  .warning-text {
+    font-size: 3.5vw;
+    bottom: 15vh;
+  }
+
+  /* 進度條縮小 */
+  .progress-bar-container {
+    margin: 6.5vh 0 0 0; /* 往上間距縮小 */
+  }
+  .progress-bar-container img {
+    width: 20vw; /* 改成螢幕寬度的 30% */
+    height: auto; /* 自動高度 */
+  }
+  .selection-title {
+    margin: 18vh 0 0 0; /* 40px -> 3.70vh */
+  }
+  /* 輪播容器位置往下 */
+  .carousel-container {
+    margin: 2vh 0 0 0; /* 往下移，避免太靠上 */
+  }
+
+  /* 輪播整體縮小 */
+  .carousel-3d-wrapper {
+    width: 80vw; /* 改成螢幕寬度的 80% */
+    height: 25vh; /* 高度縮小 */
+  }
+
+  /* 單個項目縮小 */
+  .carousel-item {
+    width: 25vw; /* 改成螢幕寬度的 40% */
+  }
+
+  /* 圓點指示器縮小並往下 */
+  .pagination-dots {
+    gap: 2vw;
+    margin: 10vh 0 0 0; /* 往下移 */
+  }
 }
