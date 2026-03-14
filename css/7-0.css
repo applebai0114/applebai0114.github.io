@@ -20,7 +20,6 @@ body {
   color: #ffffff;
   font-family: var(--font-en), var(--font-zh);
   overflow-x: hidden;
-  /* 確保字體平滑 */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,11 +33,9 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-
-  /* Flex 容器設定 */
-  flex-direction: column; /* 內容垂直排列 */
-  align-items: center; /* 內容水平置中 */
-  justify-content: flex-start; /* 預設內容從頂部開始排列 */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
 }
 
@@ -47,10 +44,9 @@ body {
 }
 
 .page.scrollable {
-  /* 紀念頁專屬：允許內容滾動 */
   height: auto;
   min-height: 100vh;
-  padding: 4.63vh 0; /* 上下內邊距 50px */
+  padding: 4.63vh 0;
   justify-content: flex-start;
 }
 
@@ -82,7 +78,7 @@ body {
 }
 
 /* ========================================================= */
-/* 4. 通用排版設定 (Typography) */
+/* 4. 通用排版設定 */
 /* ========================================================= */
 
 h1 {
@@ -94,55 +90,55 @@ h1 {
 h2 {
   font-size: 2.81vw;
   font-weight: bold;
-  margin-bottom: 1.85vh;
+  margin: 0 0 1.85vh 0;
 }
 
 h3 {
   font-size: 1.88vw;
   font-weight: bold;
-  margin-bottom: 0.93vh;
+  margin: 0 0 0.93vh 0;
+}
+
+p {
+  margin: 0;
 }
 
 /* ========================================================= */
-/* 5. 按鈕基礎與樣式二 (.btn-secondary) */
+/* 5. 按鈕 */
 /* ========================================================= */
 
 .btn {
-  /* 1. 尺寸與邊角 */
-  width: 9.27vw; /* 178px -> 9.27vw */
-  height: 7.22vh; /* 78px -> 7.22vh */
-  border-radius: 5.56vh; /* 60px -> 5.56vh */
+  width: 9.27vw;
+  height: 7.22vh;
+  border-radius: 5.56vh;
 
-  /* 2. 定位 */
-  margin-top: 0;
-  position: absolute; /* 絕對定位固定在底部 */
-  bottom: 4.63vh; /* 50px -> 4.63vh */
+  position: absolute;
+  bottom: 4.63vh;
   left: 50%;
-  transform: translateX(-50%); /* 水平置中 */
-  text-transform: uppercase;
+  transform: translateX(-50%);
+  margin-top: 0;
 
-  /* 3. 文字樣式 */
-  font-size: 1.46vw; /* 28px -> 1.46vw */
+  font-size: 1.46vw;
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0;
+  text-transform: uppercase;
 
-  /* 4. 基礎樣式與 Flex 內容置中 */
   padding: 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding-top: 0.37vh;
+
   cursor: pointer;
   border: none;
+  border: 0.1vw solid transparent;
+  box-sizing: border-box;
   transition: all 0.1s ease-in-out;
   z-index: 9999;
   user-select: none;
-  border: 0.1vw solid transparent; /* 2px -> 0.10vw */
-  box-sizing: border-box;
-  padding-top: 0.37vh; /* 4px -> 0.37vh */
 }
 
-/* 樣式二：NEXT / 回首頁 按鈕顏色與 Hover 效果 */
 .btn-secondary {
   background-color: var(--primary-yellow);
   color: var(--primary-purple);
@@ -155,58 +151,95 @@ h3 {
 }
 
 .btn-secondary:active {
-  /* Active 狀態縮小效果 */
-  width: 8.96vw; /* 172px -> 8.96vw */
-  height: 6.67vh; /* 72px -> 6.67vh */
-  font-size: 1.25vw; /* 24px -> 1.25vw */
+  width: 8.96vw;
+  height: 6.67vh;
+  font-size: 1.25vw;
   transform: translateX(-50%);
 }
 
-/* ========================================================= */
-/* 6.頂部裝飾區塊 (Decorative_top) */
-/* ========================================================= */
+/* ========================= */
+/* 頂部裝飾區塊 */
+/* ========================= */
 
 .Decorative_top {
-  display: flex; /* 讓 Logo 區塊和文字區塊橫向排列 */
-  width: 100%; /* 佔滿整個寬度 */
-}
-
-/* Logo 區塊 (請注意，這裡設定的 Logo margin 會與 .logo-container 的 absolute 衝突) */
-.logo_animation img {
-  width: 6.1vw;
-  height: 7.42vh;
-  margin: 0 0 0 2.6vw; /* .page.scrollable 已經設定了 padding: 50px */
-}
-
-.Decorative_top {
-  display: flex; /* 讓 Logo 區塊和文字區塊橫向排列 */
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: flex-start;
   width: 100%;
+  box-sizing: border-box;
+}
+
+.logo_animation {
+  flex: 0 0 auto;
+}
+
+.logo_animation img {
+  display: block;
+  width: 6.1vw;
+  height: auto;
+  margin: 0 0 0 2.6vw;
 }
 
 .Decorative_text_top {
-  margin: 0 2.6vw 0 5.73vw; /* .page.scrollable 已經設定了 padding: 50px */
-  display: flex; /* 讓裡面所有 p 橫著排 */
-  justify-content: space-between; /* 讓每個文字平均分布*/
-  align-items: flex-start; /* 上對齊 */
-  /* ❗ 確保這行存在！這是讓它佔滿寬度並分散文字的關鍵！ ❗ */
+  position: relative;
+  z-index: 21;
   flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 2.6vw 0 5.73vw;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.Decorative_text_top p {
+  display: block;
+  margin: 0;
+  color: #ffffff;
   font-size: 0.73vw;
-  font-weight: lighter;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.Decorative_text_top p:last-child {
+  white-space: normal;
+  text-align: left;
+  max-width: 12vw;
 }
 
 /* ========================================================= */
-/* 7. 紀念頁 (7-0) 專屬區塊設定 */
+/* 7. 紀念頁專屬 */
 /* ========================================================= */
 
+/* 外層頁面 */
+#page-memory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+}
+
+/* 內容區 */
 #page_memory {
   position: relative;
-  width: 78.13vw; /* 1500px -> 78.13vw */
-  height: 70vh; /* 700px -> 64.81vh */
+  width: 78.13vw;
+  height: 70vh;
   overflow: visible;
 }
 
+.recommendation-text {
+  margin-top: 1.85vh;
+  text-align: center;
+}
+
+#recommendation-text-zh {
+  font-weight: bold;
+}
+
+/* 主要內容佈局 */
 .memory_layout {
-  width: min(58.33vw, 100% - 4.17vw); /* 1120px -> 58.33vw; 80px -> 4.17vw */
+  width: min(58.33vw, calc(100% - 4.17vw));
   position: relative;
   margin: 0 auto;
   overflow: visible;
@@ -215,21 +248,19 @@ h3 {
 /* CD result */
 .final-cd-container {
   position: relative;
-  margin-left: -22vw; /* -350px -> -18.23vw */
-  margin-top: 5.56vh; /* 60px -> 5.56vh */
+  margin-left: -22vw;
+  margin-top: 5.56vh;
   flex: 0 0 auto;
   background: rgba(0, 0, 0, 0.05);
 }
 
 .cd-part {
   position: relative;
-  width: 62.5vw; /* 1200px -> 62.50vw */
+  width: 62.5vw;
   height: auto;
-  position: relative;
   overflow: visible;
 }
 
-/* 所有零件疊在裡面 */
 .cd-part img {
   position: absolute;
   inset: 0;
@@ -240,7 +271,6 @@ h3 {
   display: block;
 }
 
-/* 圖層順序 */
 #result-case-img {
   z-index: 2;
 }
@@ -254,64 +284,41 @@ h3 {
   z-index: 4;
 }
 
-.cd-part img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+/* 右側文字與 Spotify */
 .right-container {
   position: absolute;
-  top: 7.8vh; /* 100px -> 9.26vh */
+  top: 7.8vh;
   right: 0;
-  left: 36.46vw; /* 700px -> 36.46vw */
-  width: 30vw; /* 500px -> 26.04vw */
+  left: 36.46vw;
+  width: 30vw;
   padding-right: 0;
   display: flex;
   flex-direction: column;
-  row-gap: 1.48vh; /* 16px -> 1.48vh */
+  row-gap: 1.48vh;
 }
 
 .song-info {
-  margin-top: 0vh;
-  line-height: 3.24vh; /* 35px -> 3.24vh */
+  margin-top: 7.41vh;
+  line-height: 3.24vh;
 }
 
-#memory-song-desc {
-  margin-top: 0.93vh; /* 10px -> 0.93vh */
-}
-
-/* 歌曲資訊區塊 (包括名稱和間距) */
 #memory-song-name {
   color: #ffffff;
-  font-size: 1.25vw; /* 24px -> 1.25vw */
+  font-size: 1.25vw;
   font-weight: bold;
 }
 
-.ig-qrcode {
-  width: 18.23vw;
-  height: 32.41vh;
-  margin-bottom: 3.7vh; /* 40px -> 3.70vh */
+#memory-song-desc {
+  margin-top: 0.93vh;
 }
 
-.memory-song-info {
-  color: var(--primary-yellow);
-  font-size: 1.04vw; /* 20px -> 1.04vw */
-  font-weight: lighter;
-
-  margin: 2.78vh 0 23.15vh 0; /* 30px -> 2.78vh, 250px -> 23.15vh */
-}
-
-.recommendation-text {
-  margin-top: 1.85vh; /* 20px -> 1.85vh */
-}
-
-.song-info {
-  margin-top: 7.41vh; /* 80px -> 7.41vh */
+.spotify-embed {
+  margin-top: 1.85vh;
 }
 
 .memory-logo-container {
   position: absolute;
-  width: 15.63vw; /* 300px -> 15.63vw */
+  width: 15.63vw;
   height: auto;
   z-index: 10;
   overflow: hidden;
@@ -323,12 +330,30 @@ h3 {
   object-fit: contain;
 }
 
-.spotify-embed {
-  margin-top: 1.85vh; /* 20px -> 1.85vh */
+/* QR code 與分享文案 */
+.ig-qrcode {
+  width: 18.23vw;
+  height: 32.41vh;
+  margin-bottom: 3.7vh;
 }
+
+.memory-song-info {
+  color: var(--primary-yellow);
+  font-size: 1.04vw;
+  font-weight: lighter;
+  margin: 2.78vh 0 23.15vh 0;
+}
+
+/* ========================================================= */
+/* 8. 手機版 */
+/* ========================================================= */
+
 @media (max-width: 768px) {
+  /* ---------- 頂部 ---------- */
+
   .Decorative_top {
     display: flex;
+    align-items: flex-start;
     width: 100%;
   }
 
@@ -343,9 +368,47 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-size: 2vw;
-    margin: 2vh 4vw 0 4vw;
+    margin: 2.2vh 4vw 0 4vw;
+    gap: 2vw;
   }
+
+  .Decorative_text_top p {
+    margin: 0;
+    font-size: 2vw;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  .Decorative_text_top p:last-child {
+    font-size: 1.8vw;
+    line-height: 1.05;
+    white-space: normal;
+    max-width: 22vw;
+    text-align: left;
+  }
+
+  /* ---------- 通用字級 ---------- */
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+    margin-bottom: 2vh;
+  }
+
+  h3 {
+    font-size: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  p {
+    font-size: 2.8vw;
+    line-height: 1.4;
+  }
+
+  /* ---------- 頁面結構 ---------- */
 
   #page-memory {
     display: flex;
@@ -366,16 +429,14 @@ h3 {
     margin-top: 2vh;
   }
 
-  h3 {
-    font-size: 6vw;
-    margin-bottom: 1vh;
-  }
-
   #recommendation-text-zh {
     font-size: 5vw;
     font-weight: bold;
     text-align: center;
+    margin-top: 1vh;
   }
+
+  /* ---------- 主要內容改直排 ---------- */
 
   .memory_layout {
     width: 100%;
@@ -399,9 +460,9 @@ h3 {
 
   .cd-part {
     position: relative;
-    width: 90vw;
-    height: 90vw;
-    max-width: 500px;
+    width: 105vw;
+    height: 105vw;
+    margin-left: -2.5vw;
     overflow: visible;
   }
 
@@ -431,24 +492,26 @@ h3 {
   .song-info {
     width: 100%;
     margin-top: 0;
-    line-height: 1.8;
     text-align: center;
+    line-height: 1.8;
   }
 
   #memory-song-name {
-    font-size: 5vw;
+    font-size: 3.5vw;
   }
 
   #memory-song-desc {
-    font-size: 3.5vw;
-    line-height: 1.8;
+    font-size: 2.8vw;
+    line-height: 3vh;
     margin-top: 1vh;
   }
 
   .spotify-embed {
-    width: 100%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 5vh auto 10vh auto;
   }
+
+  /* ---------- 分享區 ---------- */
 
   .memory-song-info {
     width: 90%;
@@ -458,19 +521,16 @@ h3 {
   }
 
   .ig-qrcode {
-    width: 32vw;
-    max-width: 160px;
-    height: auto;
-    margin: 2vh auto;
-    display: block;
+    display: none;
   }
 
+  /* ---------- 按鈕 ---------- */
+
   .btn {
-    position: static;
-    left: auto;
-    bottom: auto;
-    transform: none;
-    margin: 3vh auto 4vh;
+    width: 40vw;
+    height: 6vh;
+    font-size: 4vw;
+    bottom: 3vh;
   }
 
   .btn-secondary {
@@ -481,9 +541,9 @@ h3 {
   }
 
   .btn-secondary:active {
-    width: 40vw;
-    height: 6vh;
-    font-size: 4vw;
-    transform: none;
+    width: 30vw;
+    height: 5vh;
+    font-size: 3vw;
+    transform: translateX(-50%);
   }
 }
