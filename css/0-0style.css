@@ -221,6 +221,7 @@ h3 {
 /* ========================================================= */
 
 .center-floating-video {
+  display: block;
   position: absolute; /* 絕對定位：讓它浮起來 */
   top: 50%; /* 垂直位置：螢幕一半 */
   left: 49%; /* 水平位置：螢幕一半 */
@@ -229,6 +230,12 @@ h3 {
   width: 59.9vw; /* ★ 你可以在這裡調整影片寬度 */
   height: auto; /* 高度自動 */
   z-index: 5; /* 層級：設為 5 確保浮在背景之上 */
+}
+
+.floating-webp {
+  display: none;
+  width: 100%;
+  height: auto;
 }
 
 .center-floating-video video {
@@ -314,9 +321,17 @@ h3 {
     line-height: 2.5vh;
   }
   .center-floating-video {
-    width: 100vw; /* 影片縮小至螢幕寬度的 90% */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .floating-webp {
+    position: absolute; /* 絕對定位：讓它浮起來 */
+    top: 50%; /* 垂直位置：螢幕一半 */
+    left: 49%; /* 水平位置：螢幕一半 */
+    transform: translate(-50%, -55%); /* 校正回正中央 */
+
+    width: 59.9vw; /* ★ 你可以在這裡調整影片寬度 */
+    height: auto; /* 高度自動 */
+    z-index: 5; /* 層級：設為 5 確保浮在背景之上 */
+    display: block;
   }
 }
