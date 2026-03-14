@@ -286,7 +286,9 @@ h3 {
   font-size: 1.25vw; /* 24px -> 1.25vw */
   font-weight: bold;
 }
-
+#ig-link {
+  color: #e0fc45;
+}
 .ig-qrcode {
   width: 18.23vw;
   height: 32.41vh;
