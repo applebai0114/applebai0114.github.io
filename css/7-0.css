@@ -157,55 +157,33 @@ p {
   transform: translateX(-50%);
 }
 
-/* ========================= */
-/* 頂部裝飾區塊 */
-/* ========================= */
+/* ========================================================= */
+/* 6. 頂部裝飾區塊 */
+/* ========================================================= */
 
 .Decorative_top {
-  position: relative;
-  z-index: 20;
   display: flex;
-  align-items: flex-start;
   width: 100%;
-  box-sizing: border-box;
-}
-
-.logo_animation {
-  flex: 0 0 auto;
 }
 
 .logo_animation img {
-  display: block;
   width: 6.1vw;
-  height: auto;
+  height: 7.42vh;
   margin: 0 0 0 2.6vw;
 }
 
 .Decorative_text_top {
-  position: relative;
-  z-index: 21;
-  flex: 1;
+  margin: 0 2.6vw 0 5.73vw;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 2.6vw 0 5.73vw;
-  box-sizing: border-box;
-  color: #ffffff;
+  flex: 1;
+  font-size: 0.73vw;
+  font-weight: lighter;
 }
 
 .Decorative_text_top p {
-  display: block;
   margin: 0;
-  color: #ffffff;
-  font-size: 0.73vw;
-  line-height: 1.2;
-  white-space: nowrap;
-}
-
-.Decorative_text_top p:last-child {
-  white-space: normal;
-  text-align: left;
-  max-width: 12vw;
 }
 
 /* ========================================================= */
@@ -527,17 +505,15 @@ p {
   /* ---------- 按鈕 ---------- */
 
   .btn {
-    width: 40vw;
-    height: 6vh;
-    font-size: 4vw;
-    bottom: 3vh;
+    position: static;
+    transform: none;
+    left: auto;
+    bottom: auto;
+    margin: 3vh auto 5vh auto;
   }
 
-  .btn-secondary {
-    width: 40vw;
-    height: 6vh;
-    font-size: 4vw;
-    display: inline-flex;
+  .btn-secondary:active {
+    transform: scale(0.96);
   }
 
   .btn-secondary:active {
