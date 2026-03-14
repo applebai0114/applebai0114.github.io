@@ -519,20 +519,12 @@ h3 {
     bottom: auto;
     margin: 3vh auto 5vh auto;
   }
-
-  /* 按鈕 */
-  .btn {
-    position: static;
-    bottom: auto;
-    width: 40vw; /* 按鈕寬度改為螢幕一半 */
+  .btn-secondary {
+    width: 40vw;
     height: 6vh;
     font-size: 4vw;
-    bottom: 3vh; /* 距離底部縮小 */
   }
-
-  .btn-primary:active {
-    position: static;
-    bottom: auto;
+  .btn-secondary:active {
     width: 30vw;
     height: 5vh;
     font-size: 3vw;
