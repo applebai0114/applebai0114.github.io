@@ -392,7 +392,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3vh;
+    gap: 1vh;
   }
 
   #page_memory {
@@ -404,7 +404,7 @@ p {
 
   .recommendation-text {
     text-align: center;
-    margin-top: 2vh;
+    margin-top: 0.5vh;
   }
 
   #recommendation-text-zh {
@@ -422,14 +422,15 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 4vh;
+    gap: 1.5vh;
     position: static;
+    margin-top: 0;
   }
 
   .final-cd-container {
     position: static;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: -4vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -439,7 +440,7 @@ p {
   .cd-part {
     position: relative;
     width: 105vw;
-    height: 105vw;
+    height: 75vw;
     margin-left: -2.5vw;
     overflow: visible;
   }
@@ -512,14 +513,22 @@ p {
     margin: 3vh auto 5vh auto;
   }
 
-  .btn-secondary:active {
-    transform: scale(0.96);
+  /* 按鈕 */
+  .btn {
+    position: static;
+    bottom: auto;
+    width: 40vw; /* 按鈕寬度改為螢幕一半 */
+    height: 6vh;
+    font-size: 4vw;
+    bottom: 3vh; /* 距離底部縮小 */
   }
 
-  .btn-secondary:active {
+  .btn-primary:active {
+    position: static;
+    bottom: auto;
     width: 30vw;
     height: 5vh;
     font-size: 3vw;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* 保持置中位移 */
   }
 }
