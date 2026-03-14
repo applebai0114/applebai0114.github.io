@@ -159,7 +159,6 @@ h3 {
   width: 8.96vw; /* 172px -> 8.96vw */
   height: 6.67vh; /* 72px -> 6.67vh */
   font-size: 1.25vw; /* 24px -> 1.25vw */
-  transform: translateX(-50%);
 }
 
 /* ========================================================= */
@@ -528,6 +527,5 @@ h3 {
     width: 30vw;
     height: 5vh;
     font-size: 3vw;
-    transform: translateX(-50%); /* 保持置中位移 */
   }
 }
