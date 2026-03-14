@@ -318,12 +318,19 @@ h3 {
     font-size: 2.13vw;
     line-height: 2.5vh;
   }
+  .center-floating-video {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 78vw;
+  }
   .floating-video {
     display: none;
   }
 
   .floating-webp {
     display: block;
-    width: 80vw;
+    width: 100%;
+    height: auto;
   }
 }
