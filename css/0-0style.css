@@ -232,16 +232,14 @@ h3 {
   z-index: 5; /* 層級：設為 5 確保浮在背景之上 */
 }
 
-.floating-webp {
-  display: none;
-  width: 100%;
-  height: auto;
-}
-
-.center-floating-video video {
+.floating-video {
   width: 100%;
   display: block;
 }
+.floating-webp {
+  display: none;
+}
+
 /* 手機尺寸 (iPhone 6/7/8 大小) */
 @media (max-width: 768px) {
   body {
@@ -320,14 +318,12 @@ h3 {
     font-size: 2.13vw;
     line-height: 2.5vh;
   }
-  .center-floating-video {
+  .floating-video {
     display: none;
   }
+
   .floating-webp {
     display: block;
     width: 80vw;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
