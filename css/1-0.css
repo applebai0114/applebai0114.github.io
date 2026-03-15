@@ -62,25 +62,23 @@ body {
 
 .video-background-layer {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
-  height: 100%;
-  z-index: -99;
+  height: 100vh;
   overflow: hidden;
+  z-index: -99;
 }
 
-#bg-video {
+.bg-video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* 置中 */
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  opacity: 1;
+  display: block;
+}
+.mobile-video {
+  display: none;
 }
 
 /* ========================================================= */
@@ -104,7 +102,13 @@ body {
   width: 24.22vw;
   height: 29.48vh;
 }
+.logo-video {
+  display: block;
+}
 
+.logo-webp {
+  display: none;
+}
 /* ========================================================= */
 /* 5. 通用排版設定 (Typography) */
 /* ========================================================= */
@@ -202,19 +206,36 @@ h3 {
 
 /* 內文區塊 */
 .text-block-middle {
-  font-size: 0.5vw;
-  line-height: 4.63vh; /* 行距設定 */
-  margin: 4.63vh 0px 0px 0px; /* 將內文推離上方標題 50px */
+  font-size: 1vw;
+  line-height: 1.8;
+  margin: 4.63vh 0 0 0;
 }
 /* 手機尺寸 (375px × 667px) */
 @media (max-width: 768px) {
+  .video-background-layer {
+    height: 100dvh;
+  }
+  .desktop-video {
+    display: none;
+  }
+  .mobile-video {
+    display: block;
+  }
   /* Logo */
   .logo-container {
     top: 51.12vh; /* 往上移一點，避免佔太多空間 */
     left: 50%;
     transform: translateX(-50%);
   }
+  .logo-video {
+    display: none;
+  }
 
+  .logo-webp {
+    display: block;
+    width: 56.26vw;
+    height: auto;
+  }
   .logo {
     width: 56.26vw; /* Logo 縮小到螢幕寬度的一半 */
     height: auto;

@@ -26,8 +26,11 @@
     </svg>
     <!--影片區塊開始-->
     <div class="video-background-layer">
-      <video autoplay loop muted playsinline id="bg-video">
+      <video class="bg-video desktop-video" autoplay loop muted playsinline>
         <source src="./video/Comp 1.mp4" type="video/mp4" />
+      </video>
+      <video class="bg-video mobile-video" autoplay loop muted playsinline>
+        <source src="./video/phone baackground.mp4" type="video/mp4" />
       </video>
     </div>
     <!--影片區塊結束-->
@@ -45,12 +48,20 @@
         </div>
 
         <div class="logo-container">
-          <video autoplay loop muted playsinline class="logo">
+          <!-- 電腦版 -->
+          <video autoplay loop muted playsinline class="logo logo-video">
             <source
               src="./video/logo會動的真的最終還沒轉檔_1.webm"
-              type="video/mp4"
+              type="video/webm"
             />
           </video>
+
+          <!-- 手機版 -->
+          <img
+            class="logo logo-webp"
+            src="./video/logo手機.webp"
+            alt="logo animation"
+          />
         </div>
         <button class="btn btn-wide" id="start_decorate_btn">
           開始裝飾你的CD殼！
